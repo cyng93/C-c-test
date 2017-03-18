@@ -1,0 +1,582 @@
+1:/* 1 - Lexical Defination */
+
+frequencies of identifiers:
+// 1.1 delimeters1:// 1.1 delimeters
+
+frequencies of identifiers:
+<delim:,>
+1:,
+
+frequencies of identifiers:
+<delim:;>
+1:;
+
+frequencies of identifiers:
+<delim:(>
+1:(
+
+frequencies of identifiers:
+<delim:)>
+1:)
+
+frequencies of identifiers:
+<delim:[>
+1:[
+
+frequencies of identifiers:
+<delim:]>
+1:]
+
+frequencies of identifiers:
+<delim:{>
+1:{
+
+frequencies of identifiers:
+<delim:}>
+1:}
+
+frequencies of identifiers:
+1:
+
+frequencies of identifiers:
+// 1.2 arithmetic, relational, logical operators1:// 1.2 arithmetic, relational, logical operators
+
+frequencies of identifiers:
+<"+">
+1:+
+
+frequencies of identifiers:
+<"-">
+1:-
+
+frequencies of identifiers:
+<"*">
+1:*
+
+frequencies of identifiers:
+<"/">
+1:/
+
+frequencies of identifiers:
+<"%">
+1:%
+
+frequencies of identifiers:
+<"<=">
+1:<=
+
+frequencies of identifiers:
+<"<">
+1:<
+
+frequencies of identifiers:
+<"=">
+<"!">
+1:=!
+
+frequencies of identifiers:
+<">=">
+1:>=
+
+frequencies of identifiers:
+<">">
+1:>
+
+frequencies of identifiers:
+<"==">
+1:==
+
+frequencies of identifiers:
+<"&&">
+1:&&
+
+frequencies of identifiers:
+<"||">
+1:||
+
+frequencies of identifiers:
+<"!">
+1:!
+
+frequencies of identifiers:
+1:
+
+frequencies of identifiers:
+// 1.3 keyword1:// 1.3 keyword
+
+frequencies of identifiers:
+<KW:while>
+1:while
+
+frequencies of identifiers:
+<KW:do>
+1:do
+
+frequencies of identifiers:
+<KW:if>
+1:if
+
+frequencies of identifiers:
+<KW:else>
+1:else
+
+frequencies of identifiers:
+<KW:true>
+1:true
+
+frequencies of identifiers:
+<KW:false>
+1:false
+
+frequencies of identifiers:
+<KW:for>
+1:for
+
+frequencies of identifiers:
+<KW:int>
+1:int
+
+frequencies of identifiers:
+<KW:print>
+1:print
+
+frequencies of identifiers:
+<KW:const>
+1:const
+
+frequencies of identifiers:
+<KW:read>
+1:read
+
+frequencies of identifiers:
+<KW:boolean>
+1:boolean
+
+frequencies of identifiers:
+<KW:bool>
+1:bool
+
+frequencies of identifiers:
+<KW:void>
+1:void
+
+frequencies of identifiers:
+<KW:float>
+1:float
+
+frequencies of identifiers:
+<KW:double>
+1:double
+
+frequencies of identifiers:
+<KW:string>
+1:string
+
+frequencies of identifiers:
+<KW:continue>
+1:continue
+
+frequencies of identifiers:
+<KW:break>
+1:break
+
+frequencies of identifiers:
+<KW:return>
+1:return
+
+frequencies of identifiers:
+1:
+
+frequencies of identifiers:
+// 1.4 identifier1:// 1.4 identifier
+
+frequencies of identifiers:
+<id:ident>
+1:ident
+
+frequencies of identifiers:
+ident	1
+<id:Ident>
+1:Ident
+
+frequencies of identifiers:
+Ident	1
+<id:IDENT>
+1:IDENT
+
+frequencies of identifiers:
+IDENT	1
+<id:_ident>
+1:_ident
+
+frequencies of identifiers:
+_ident	1
+<id:__indent>
+1:__indent
+
+frequencies of identifiers:
+__indent	1
+<id:__3ident>
+1:__3ident
+
+frequencies of identifiers:
+__3ident	1
+<id:ident3>
+1:ident3
+
+frequencies of identifiers:
+ident3	1
+1:
+
+frequencies of identifiers:
+// 1.5 integer constant1:// 1.5 integer constant
+
+frequencies of identifiers:
+<integer:123>
+1:123
+
+frequencies of identifiers:
+<integer:45>
+1:45
+
+frequencies of identifiers:
+<integer:6>
+1:6
+
+frequencies of identifiers:
+<integer:0>
+1:0
+
+frequencies of identifiers:
+1:
+
+frequencies of identifiers:
+// 1.6 floating point constant1:// 1.6 floating point constant
+
+frequencies of identifiers:
+<float:0.0>
+1:0.0
+
+frequencies of identifiers:
+<float:02.03>
+1:02.03
+
+frequencies of identifiers:
+<float:123.45>
+1:123.45
+
+frequencies of identifiers:
+1:
+
+frequencies of identifiers:
+// 1.7 scientific notation1:// 1.7 scientific notation
+
+frequencies of identifiers:
+<scientific:1.23E4>
+1:1.23E4
+
+frequencies of identifiers:
+<scientific:1.23E+4>
+1:1.23E+4
+
+frequencies of identifiers:
+<scientific:01.23E-4>
+1:01.23E-4
+
+frequencies of identifiers:
+<scientific:123E04>
+1:123E04
+
+frequencies of identifiers:
+1:
+
+frequencies of identifiers:
+// 1.8 string constant1:// 1.8 string constant
+
+frequencies of identifiers:
+<string:,>
+1:","
+
+frequencies of identifiers:
+<string:;>
+1:";"
+
+frequencies of identifiers:
+<string:(>
+1:"("
+
+frequencies of identifiers:
+<string:)>
+1:")"
+
+frequencies of identifiers:
+<string:[>
+1:"["
+
+frequencies of identifiers:
+<string:]>
+1:"]"
+
+frequencies of identifiers:
+<string:{>
+1:"{"
+
+frequencies of identifiers:
+<string:}>
+1:"}"
+
+frequencies of identifiers:
+<string:+>
+1:"+"
+
+frequencies of identifiers:
+<string:->
+1:"-"
+
+frequencies of identifiers:
+<string:*>
+1:"*"
+
+frequencies of identifiers:
+<string:/>
+1:"/"
+
+frequencies of identifiers:
+<string:%>
+1:"%"
+
+frequencies of identifiers:
+<string:=<>
+1:"=<"
+
+frequencies of identifiers:
+<string:<>
+1:"<"
+
+frequencies of identifiers:
+<string:=!>
+1:"=!"
+
+frequencies of identifiers:
+<string:=>>
+1:"=>"
+
+frequencies of identifiers:
+<string:>>
+1:">"
+
+frequencies of identifiers:
+<string:==>
+1:"=="
+
+frequencies of identifiers:
+<string:&&>
+1:"&&"
+
+frequencies of identifiers:
+<string:||>
+1:"||"
+
+frequencies of identifiers:
+<string:!>
+1:"!"
+
+frequencies of identifiers:
+<string:while>
+1:"while"
+
+frequencies of identifiers:
+<string:do>
+1:"do"
+
+frequencies of identifiers:
+<string:if>
+1:"if"
+
+frequencies of identifiers:
+<string:else>
+1:"else"
+
+frequencies of identifiers:
+<string:true>
+1:"true"
+
+frequencies of identifiers:
+<string:false>
+1:"false"
+
+frequencies of identifiers:
+<string:for>
+1:"for"
+
+frequencies of identifiers:
+<string:int>
+1:"int"
+
+frequencies of identifiers:
+<string:print>
+1:"print"
+
+frequencies of identifiers:
+<string:const>
+1:"const"
+
+frequencies of identifiers:
+<string:read>
+1:"read"
+
+frequencies of identifiers:
+<string:boolean>
+1:"boolean"
+
+frequencies of identifiers:
+<string:bool>
+1:"bool"
+
+frequencies of identifiers:
+<string:void>
+1:"void"
+
+frequencies of identifiers:
+<string:float>
+1:"float"
+
+frequencies of identifiers:
+<string:double>
+1:"double"
+
+frequencies of identifiers:
+<string:string>
+1:"string"
+
+frequencies of identifiers:
+<string:continue>
+1:"continue"
+
+frequencies of identifiers:
+<string:break>
+1:"break"
+
+frequencies of identifiers:
+<string:return>
+1:"return"
+
+frequencies of identifiers:
+<string:ident>
+1:"ident"
+
+frequencies of identifiers:
+<string:Ident>
+1:"Ident"
+
+frequencies of identifiers:
+<string:IDENT>
+1:"IDENT"
+
+frequencies of identifiers:
+<string:_ident>
+1:"_ident"
+
+frequencies of identifiers:
+<string:__indent>
+1:"__indent"
+
+frequencies of identifiers:
+<string:__3ident>
+1:"__3ident"
+
+frequencies of identifiers:
+<string:3ident>
+1:"3ident"
+
+frequencies of identifiers:
+<string:ident3>
+1:"ident3"
+
+frequencies of identifiers:
+<string:ident-3>
+1:"ident-3"
+
+frequencies of identifiers:
+<string:-indent3>
+1:"-indent3"
+
+frequencies of identifiers:
+<string:hello world>
+1:"hello world"
+
+frequencies of identifiers:
+<string:"hello world">
+1:"\"hello world\""
+
+frequencies of identifiers:
+<string:hello world\\>
+1:"hello world\\\\"
+
+frequencies of identifiers:
+<string:#pragma source on>
+1:"#pragma source on"
+
+frequencies of identifiers:
+<string:#pragma source off>
+1:"#pragma source off"
+
+frequencies of identifiers:
+<string:#pragma token on>
+1:"#pragma token on"
+
+frequencies of identifiers:
+<string:#pragma token off>
+1:"#pragma token off"
+
+frequencies of identifiers:
+<string:#pragma statistic on>
+1:"#pragma statistic on"
+
+frequencies of identifiers:
+Error at line 1: "
+//cpp-style comment in string"1:"//cpp-style comment in string"
+
+frequencies of identifiers:
+//c-sytle comment in string"1:"//c-sytle comment in string"
+
+frequencies of identifiers:
+1:
+
+frequencies of identifiers:
+// 1.9 Comments - funny but we've already use them above ...1:// 1.9 Comments - funny but we've already use them above ...
+
+frequencies of identifiers:
+// C++ syntax line comment1:// C++ syntax line comment
+
+frequencies of identifiers:
+1:/* C syntax block comment */
+
+frequencies of identifiers:
+1:/*
+
+frequencies of identifiers:
+<"*">
+<id:block>
+<id:comment>
+<id:wrap>
+1: * block comment wrap
+
+frequencies of identifiers:
+block	1
+comment	1
+wrap	1
+<"*">
+<id:across>
+1: * across
+
+frequencies of identifiers:
+across	1
+Error at line 1: .
+<"*">
+<id:lines>
+<"*">
+<"/">
+1: */
+
+frequencies of identifiers:

@@ -1,0 +1,444 @@
+===== _INPUT - 1 =====
+/* 1 - Lexical Defination */
+===== OUTPUT - 1 =====
+===== _INPUT - 2 =====
+// 1.1 delimeters
+===== OUTPUT - 2 =====
+===== _INPUT - 3 =====
+,
+===== OUTPUT - 3 =====
+===== _INPUT - 4 =====
+;
+===== OUTPUT - 4 =====
+===== _INPUT - 5 =====
+(
+===== OUTPUT - 5 =====
+===== _INPUT - 6 =====
+)
+===== OUTPUT - 6 =====
+===== _INPUT - 7 =====
+[
+===== OUTPUT - 7 =====
+===== _INPUT - 8 =====
+]
+===== OUTPUT - 8 =====
+===== _INPUT - 9 =====
+{
+===== OUTPUT - 9 =====
+===== _INPUT - 10 =====
+}
+===== OUTPUT - 10 =====
+===== _INPUT - 11 =====
+
+===== OUTPUT - 11 =====
+===== _INPUT - 12 =====
+// 1.2 arithmetic, relational, logical operators
+===== OUTPUT - 12 =====
+===== _INPUT - 13 =====
++
+===== OUTPUT - 13 =====
+===== _INPUT - 14 =====
+-
+===== OUTPUT - 14 =====
+===== _INPUT - 15 =====
+*
+===== OUTPUT - 15 =====
+===== _INPUT - 16 =====
+/
+===== OUTPUT - 16 =====
+===== _INPUT - 17 =====
+%
+===== OUTPUT - 17 =====
+===== _INPUT - 18 =====
+<=
+===== OUTPUT - 18 =====
+===== _INPUT - 19 =====
+<
+===== OUTPUT - 19 =====
+===== _INPUT - 20 =====
+=!
+===== OUTPUT - 20 =====
+===== _INPUT - 21 =====
+>=
+===== OUTPUT - 21 =====
+===== _INPUT - 22 =====
+>
+===== OUTPUT - 22 =====
+===== _INPUT - 23 =====
+==
+===== OUTPUT - 23 =====
+===== _INPUT - 24 =====
+&&
+===== OUTPUT - 24 =====
+===== _INPUT - 25 =====
+||
+===== OUTPUT - 25 =====
+===== _INPUT - 26 =====
+!
+===== OUTPUT - 26 =====
+===== _INPUT - 27 =====
+
+===== OUTPUT - 27 =====
+===== _INPUT - 28 =====
+// 1.3 keyword
+===== OUTPUT - 28 =====
+===== _INPUT - 29 =====
+while
+===== OUTPUT - 29 =====
+===== _INPUT - 30 =====
+do
+===== OUTPUT - 30 =====
+===== _INPUT - 31 =====
+if
+===== OUTPUT - 31 =====
+===== _INPUT - 32 =====
+else
+===== OUTPUT - 32 =====
+===== _INPUT - 33 =====
+true
+===== OUTPUT - 33 =====
+===== _INPUT - 34 =====
+false
+===== OUTPUT - 34 =====
+===== _INPUT - 35 =====
+for
+===== OUTPUT - 35 =====
+===== _INPUT - 36 =====
+int
+===== OUTPUT - 36 =====
+===== _INPUT - 37 =====
+print
+===== OUTPUT - 37 =====
+===== _INPUT - 38 =====
+const
+===== OUTPUT - 38 =====
+===== _INPUT - 39 =====
+read
+===== OUTPUT - 39 =====
+===== _INPUT - 40 =====
+boolean
+===== OUTPUT - 40 =====
+===== _INPUT - 41 =====
+bool
+===== OUTPUT - 41 =====
+===== _INPUT - 42 =====
+void
+===== OUTPUT - 42 =====
+===== _INPUT - 43 =====
+float
+===== OUTPUT - 43 =====
+===== _INPUT - 44 =====
+double
+===== OUTPUT - 44 =====
+===== _INPUT - 45 =====
+string
+===== OUTPUT - 45 =====
+===== _INPUT - 46 =====
+continue
+===== OUTPUT - 46 =====
+===== _INPUT - 47 =====
+break
+===== OUTPUT - 47 =====
+===== _INPUT - 48 =====
+return
+===== OUTPUT - 48 =====
+===== _INPUT - 49 =====
+
+===== OUTPUT - 49 =====
+===== _INPUT - 50 =====
+// 1.4 identifier
+===== OUTPUT - 50 =====
+===== _INPUT - 51 =====
+ident
+===== OUTPUT - 51 =====
+===== _INPUT - 52 =====
+Ident
+===== OUTPUT - 52 =====
+===== _INPUT - 53 =====
+IDENT
+===== OUTPUT - 53 =====
+===== _INPUT - 54 =====
+_ident
+===== OUTPUT - 54 =====
+===== _INPUT - 55 =====
+__indent
+===== OUTPUT - 55 =====
+===== _INPUT - 56 =====
+__3ident
+===== OUTPUT - 56 =====
+===== _INPUT - 57 =====
+ident3
+===== OUTPUT - 57 =====
+===== _INPUT - 58 =====
+
+===== OUTPUT - 58 =====
+===== _INPUT - 59 =====
+// 1.5 integer constant
+===== OUTPUT - 59 =====
+===== _INPUT - 60 =====
+123
+===== OUTPUT - 60 =====
+===== _INPUT - 61 =====
+45
+===== OUTPUT - 61 =====
+===== _INPUT - 62 =====
+6
+===== OUTPUT - 62 =====
+===== _INPUT - 63 =====
+0
+===== OUTPUT - 63 =====
+===== _INPUT - 64 =====
+
+===== OUTPUT - 64 =====
+===== _INPUT - 65 =====
+// 1.6 floating point constant
+===== OUTPUT - 65 =====
+===== _INPUT - 66 =====
+0.0
+===== OUTPUT - 66 =====
+===== _INPUT - 67 =====
+02.03
+===== OUTPUT - 67 =====
+===== _INPUT - 68 =====
+123.45
+===== OUTPUT - 68 =====
+===== _INPUT - 69 =====
+
+===== OUTPUT - 69 =====
+===== _INPUT - 70 =====
+// 1.7 scientific notation
+===== OUTPUT - 70 =====
+===== _INPUT - 71 =====
+1.23E4
+===== OUTPUT - 71 =====
+===== _INPUT - 72 =====
+1.23E+4
+===== OUTPUT - 72 =====
+===== _INPUT - 73 =====
+01.23E-4
+===== OUTPUT - 73 =====
+===== _INPUT - 74 =====
+123E04
+===== OUTPUT - 74 =====
+===== _INPUT - 75 =====
+
+===== OUTPUT - 75 =====
+===== _INPUT - 76 =====
+// 1.8 string constant
+===== OUTPUT - 76 =====
+===== _INPUT - 77 =====
+","
+===== OUTPUT - 77 =====
+===== _INPUT - 78 =====
+";"
+===== OUTPUT - 78 =====
+===== _INPUT - 79 =====
+"("
+===== OUTPUT - 79 =====
+===== _INPUT - 80 =====
+")"
+===== OUTPUT - 80 =====
+===== _INPUT - 81 =====
+"["
+===== OUTPUT - 81 =====
+===== _INPUT - 82 =====
+"]"
+===== OUTPUT - 82 =====
+===== _INPUT - 83 =====
+"{"
+===== OUTPUT - 83 =====
+===== _INPUT - 84 =====
+"}"
+===== OUTPUT - 84 =====
+===== _INPUT - 85 =====
+"+"
+===== OUTPUT - 85 =====
+===== _INPUT - 86 =====
+"-"
+===== OUTPUT - 86 =====
+===== _INPUT - 87 =====
+"*"
+===== OUTPUT - 87 =====
+===== _INPUT - 88 =====
+"/"
+===== OUTPUT - 88 =====
+===== _INPUT - 89 =====
+"%"
+===== OUTPUT - 89 =====
+===== _INPUT - 90 =====
+"=<"
+===== OUTPUT - 90 =====
+===== _INPUT - 91 =====
+"<"
+===== OUTPUT - 91 =====
+===== _INPUT - 92 =====
+"=!"
+===== OUTPUT - 92 =====
+===== _INPUT - 93 =====
+"=>"
+===== OUTPUT - 93 =====
+===== _INPUT - 94 =====
+">"
+===== OUTPUT - 94 =====
+===== _INPUT - 95 =====
+"=="
+===== OUTPUT - 95 =====
+===== _INPUT - 96 =====
+"&&"
+===== OUTPUT - 96 =====
+===== _INPUT - 97 =====
+"||"
+===== OUTPUT - 97 =====
+===== _INPUT - 98 =====
+"!"
+===== OUTPUT - 98 =====
+===== _INPUT - 99 =====
+"while"
+===== OUTPUT - 99 =====
+===== _INPUT - 100 =====
+"do"
+===== OUTPUT - 100 =====
+===== _INPUT - 101 =====
+"if"
+===== OUTPUT - 101 =====
+===== _INPUT - 102 =====
+"else"
+===== OUTPUT - 102 =====
+===== _INPUT - 103 =====
+"true"
+===== OUTPUT - 103 =====
+===== _INPUT - 104 =====
+"false"
+===== OUTPUT - 104 =====
+===== _INPUT - 105 =====
+"for"
+===== OUTPUT - 105 =====
+===== _INPUT - 106 =====
+"int"
+===== OUTPUT - 106 =====
+===== _INPUT - 107 =====
+"print"
+===== OUTPUT - 107 =====
+===== _INPUT - 108 =====
+"const"
+===== OUTPUT - 108 =====
+===== _INPUT - 109 =====
+"read"
+===== OUTPUT - 109 =====
+===== _INPUT - 110 =====
+"boolean"
+===== OUTPUT - 110 =====
+===== _INPUT - 111 =====
+"bool"
+===== OUTPUT - 111 =====
+===== _INPUT - 112 =====
+"void"
+===== OUTPUT - 112 =====
+===== _INPUT - 113 =====
+"float"
+===== OUTPUT - 113 =====
+===== _INPUT - 114 =====
+"double"
+===== OUTPUT - 114 =====
+===== _INPUT - 115 =====
+"string"
+===== OUTPUT - 115 =====
+===== _INPUT - 116 =====
+"continue"
+===== OUTPUT - 116 =====
+===== _INPUT - 117 =====
+"break"
+===== OUTPUT - 117 =====
+===== _INPUT - 118 =====
+"return"
+===== OUTPUT - 118 =====
+===== _INPUT - 119 =====
+"ident"
+===== OUTPUT - 119 =====
+===== _INPUT - 120 =====
+"Ident"
+===== OUTPUT - 120 =====
+===== _INPUT - 121 =====
+"IDENT"
+===== OUTPUT - 121 =====
+===== _INPUT - 122 =====
+"_ident"
+===== OUTPUT - 122 =====
+===== _INPUT - 123 =====
+"__indent"
+===== OUTPUT - 123 =====
+===== _INPUT - 124 =====
+"__3ident"
+===== OUTPUT - 124 =====
+===== _INPUT - 125 =====
+"3ident"
+===== OUTPUT - 125 =====
+===== _INPUT - 126 =====
+"ident3"
+===== OUTPUT - 126 =====
+===== _INPUT - 127 =====
+"ident-3"
+===== OUTPUT - 127 =====
+===== _INPUT - 128 =====
+"-indent3"
+===== OUTPUT - 128 =====
+===== _INPUT - 129 =====
+"hello world"
+===== OUTPUT - 129 =====
+===== _INPUT - 130 =====
+"\"hello world\""
+===== OUTPUT - 130 =====
+===== _INPUT - 131 =====
+"hello world\\"
+===== OUTPUT - 131 =====
+===== _INPUT - 132 =====
+"#pragma source on"
+===== OUTPUT - 132 =====
+===== _INPUT - 133 =====
+"#pragma source off"
+===== OUTPUT - 133 =====
+===== _INPUT - 134 =====
+"#pragma token on"
+===== OUTPUT - 134 =====
+===== _INPUT - 135 =====
+"#pragma token off"
+===== OUTPUT - 135 =====
+===== _INPUT - 136 =====
+"#pragma statistic on"
+===== OUTPUT - 136 =====
+===== _INPUT - 137 =====
+"#pragma statistic off"
+===== OUTPUT - 137 =====
+===== _INPUT - 138 =====
+"//cpp-style comment in string"
+===== OUTPUT - 138 =====
+===== _INPUT - 139 =====
+"//c-sytle comment in string"
+===== OUTPUT - 139 =====
+===== _INPUT - 140 =====
+
+===== OUTPUT - 140 =====
+===== _INPUT - 141 =====
+// 1.9 Comments - funny but we've already use them above ...
+===== OUTPUT - 141 =====
+===== _INPUT - 142 =====
+// C++ syntax line comment
+===== OUTPUT - 142 =====
+===== _INPUT - 143 =====
+/* C syntax block comment */
+===== OUTPUT - 143 =====
+===== _INPUT - 144 =====
+/*
+===== OUTPUT - 144 =====
+===== _INPUT - 145 =====
+ * block comment wrap
+===== OUTPUT - 145 =====
+===== _INPUT - 146 =====
+ * across
+===== OUTPUT - 146 =====
+===== _INPUT - 147 =====
+ * lines.
+===== OUTPUT - 147 =====
+===== _INPUT - 148 =====
+ */
+===== OUTPUT - 148 =====

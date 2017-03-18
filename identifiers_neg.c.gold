@@ -1,0 +1,28 @@
+===== _INPUT - 1 =====
+3ident      //fail
+===== OUTPUT - 1 =====
+<integer:3>
+<id:ident>
+//fail1:3ident      //fail
+
+frequencies of identifiers:
+ident	1
+===== _INPUT - 2 =====
+ident-3     //undefine
+===== OUTPUT - 2 =====
+<id:ident>
+<"-">
+<integer:3>
+//undefine1:ident-3     //undefine
+
+frequencies of identifiers:
+ident	1
+===== _INPUT - 3 =====
+-indent3    //undefine
+===== OUTPUT - 3 =====
+<"-">
+<id:indent3>
+//undefine1:-indent3    //undefine
+
+frequencies of identifiers:
+indent3	1

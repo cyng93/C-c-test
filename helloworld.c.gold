@@ -1,0 +1,81 @@
+// print hello world1:// print hello world
+
+frequencies of identifiers:
+<KW:void>
+<id:main>
+<delim:(>
+<delim:)>
+1:void main()
+
+frequencies of identifiers:
+main	1
+<delim:{>
+1:{
+
+frequencies of identifiers:
+<KW:int>
+<id:a>
+<delim:;>
+1:    int a;
+
+frequencies of identifiers:
+a	1
+<KW:double>
+<id:b>
+<delim:;>
+1:    double b;
+
+frequencies of identifiers:
+b	1
+<KW:print>
+<string:hello world>
+<delim:;>
+1:    print "hello world";
+
+frequencies of identifiers:
+<id:a>
+<"=">
+<integer:1>
+<"+">
+<integer:1>
+<delim:;>
+1:    a = 1+1;
+
+frequencies of identifiers:
+a	1
+<id:b>
+<"=">
+<float:1.23>
+1:    b = 1.23
+
+frequencies of identifiers:
+b	1
+<KW:if>
+<delim:(>
+<id:a>
+<">">
+<integer:1>
+<delim:)>
+<delim:{>
+1:    if (a > 1){
+
+frequencies of identifiers:
+a	1
+<id:b>
+<"=">
+<id:b>
+<"*">
+<scientific:1.23e-1>
+<delim:;>
+1:	b = b*1.23e-1;
+
+frequencies of identifiers:
+b	2
+<delim:}>
+1:    }
+
+frequencies of identifiers:
+<delim:}>
+1:}
+
+frequencies of identifiers:
