@@ -53,9 +53,9 @@ TMP_FILE=$(date|md5sum|awk '{print $1}')
 while IFS= read -r line
 do
     echo "${line}" > ${TMP_FILE}
-    echo -e "===== _INPUT - ${CNT} =====" >> "${INPUT}.output"
-    echo -e "${line}" >> "${INPUT}.output"
-    echo -e "===== OUTPUT - ${CNT} =====" >> "${INPUT}.output"
+    echo -e "===== _INPUT - ${CNT} =====" >> "${OUTPUT}"
+    echo -e "${line}" >> "${OUTPUT}"
+    echo -e "===== OUTPUT - ${CNT} =====" >> "${OUTPUT}"
     ./scanner ${TMP_FILE} 2&>> "${OUTPUT}"
     rm ${TMP_FILE}
     let CNT=CNT+1

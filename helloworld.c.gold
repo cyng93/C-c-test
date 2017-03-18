@@ -1,6 +1,12 @@
+===== _INPUT - 1 =====
+// print hello world
+===== OUTPUT - 1 =====
 // print hello world1:// print hello world
 
 frequencies of identifiers:
+===== _INPUT - 2 =====
+void main()
+===== OUTPUT - 2 =====
 <KW:void>
 <id:main>
 <delim:(>
@@ -9,10 +15,16 @@ frequencies of identifiers:
 
 frequencies of identifiers:
 main	1
+===== _INPUT - 3 =====
+{
+===== OUTPUT - 3 =====
 <delim:{>
 1:{
 
 frequencies of identifiers:
+===== _INPUT - 4 =====
+    int a;
+===== OUTPUT - 4 =====
 <KW:int>
 <id:a>
 <delim:;>
@@ -20,6 +32,9 @@ frequencies of identifiers:
 
 frequencies of identifiers:
 a	1
+===== _INPUT - 5 =====
+    double b;
+===== OUTPUT - 5 =====
 <KW:double>
 <id:b>
 <delim:;>
@@ -27,12 +42,18 @@ a	1
 
 frequencies of identifiers:
 b	1
+===== _INPUT - 6 =====
+    print "hello world";
+===== OUTPUT - 6 =====
 <KW:print>
 <string:hello world>
 <delim:;>
 1:    print "hello world";
 
 frequencies of identifiers:
+===== _INPUT - 7 =====
+    a = 1+1;
+===== OUTPUT - 7 =====
 <id:a>
 <"=">
 <integer:1>
@@ -43,6 +64,9 @@ frequencies of identifiers:
 
 frequencies of identifiers:
 a	1
+===== _INPUT - 8 =====
+    b = 1.23
+===== OUTPUT - 8 =====
 <id:b>
 <"=">
 <float:1.23>
@@ -50,6 +74,9 @@ a	1
 
 frequencies of identifiers:
 b	1
+===== _INPUT - 9 =====
+    if (a > 1){
+===== OUTPUT - 9 =====
 <KW:if>
 <delim:(>
 <id:a>
@@ -61,6 +88,9 @@ b	1
 
 frequencies of identifiers:
 a	1
+===== _INPUT - 10 =====
+	b = b*1.23e-1;
+===== OUTPUT - 10 =====
 <id:b>
 <"=">
 <id:b>
@@ -71,10 +101,16 @@ a	1
 
 frequencies of identifiers:
 b	2
+===== _INPUT - 11 =====
+    }
+===== OUTPUT - 11 =====
 <delim:}>
 1:    }
 
 frequencies of identifiers:
+===== _INPUT - 12 =====
+}
+===== OUTPUT - 12 =====
 <delim:}>
 1:}
 

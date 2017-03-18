@@ -1,11 +1,44 @@
+===== _INPUT - 1 =====
+~
+===== OUTPUT - 1 =====
 Error at line 1: ~
+===== _INPUT - 2 =====
+`
+===== OUTPUT - 2 =====
 Error at line 1: `
+===== _INPUT - 3 =====
+@
+===== OUTPUT - 3 =====
 Error at line 1: @
+===== _INPUT - 4 =====
+#
+===== OUTPUT - 4 =====
 Error at line 1: #
+===== _INPUT - 5 =====
+$
+===== OUTPUT - 5 =====
 Error at line 1: $
+===== _INPUT - 6 =====
+^
+===== OUTPUT - 6 =====
 Error at line 1: ^
+===== _INPUT - 7 =====
+&
+===== OUTPUT - 7 =====
 Error at line 1: &
+===== _INPUT - 8 =====
+\
+===== OUTPUT - 8 =====
 Error at line 1: \
+===== _INPUT - 9 =====
+.
+===== OUTPUT - 9 =====
 Error at line 1: .
+===== _INPUT - 10 =====
+:
+===== OUTPUT - 10 =====
 Error at line 1: :
+===== _INPUT - 11 =====
+'
+===== OUTPUT - 11 =====
 Error at line 1: '

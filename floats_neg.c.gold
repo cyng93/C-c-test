@@ -1,0 +1,6 @@
+===== _INPUT - 1 =====
+//123.  //runtime error - as '.' is undefine token
+===== OUTPUT - 1 =====
+//123.  //runtime error - as '.' is undefine token1://123.  //runtime error - as '.' is undefine token
+
+frequencies of identifiers:
