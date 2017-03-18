@@ -10,6 +10,7 @@
 
 
 INPUT=$1
+let VERBOSE=1
 OUTPUT="${INPUT}.$(whoami)"
 GOLD_ANS="${INPUT}.gold"
 
@@ -22,7 +23,6 @@ ${TEST_AVAILABLE}\
  "
 
 
-
 if [ "$#" -ne 1 ]; then
     echo -e "${USAGE}"
     exit -1
@@ -32,7 +32,9 @@ fi
 if [ ! -f 'scanner' ]; then
     echo -e " ~> scanner not found, trying to make it from upper directory..."
     WORKSPACE=$(pwd)
-    cd .. && make && cp scanner ${WORKSPACE} && cd ${WORKSPACE}
+    cd ..
+    UPPER_DIR=$(pwd)
+    make && ln -s ${UPPER_DIR}/scanner ${WORKSPACE}/ && cd ${WORKSPACE}
 fi
 
 # Check if input file exist
@@ -47,16 +49,21 @@ if [ -f "${OUTPUT}" ]; then
     rm -i ${OUTPUT}
 fi
 
-# For each line in `$INPUT`, feed them to scanner
+# For each line in `$INPUT`, write them to a temp_file,
+#   before passing it as the input source to the scanner.
 CNT=1
 TMP_FILE=$(date|md5sum|awk '{print $1}')
 while IFS= read -r line
 do
     echo "${line}" > ${TMP_FILE}
-    echo -e "===== _INPUT - ${CNT} =====" >> "${OUTPUT}"
-    echo -e "${line}" >> "${OUTPUT}"
-    echo -e "===== OUTPUT - ${CNT} =====" >> "${OUTPUT}"
-    ./scanner ${TMP_FILE} 2&>> "${OUTPUT}"
+    if [[ "${VERBOSE}" -eq "1" ]]; then
+      echo -e "===== _INPUT - ${CNT} =====" >> "${OUTPUT}"
+      echo -e "${line}" >> "${OUTPUT}"
+      echo -e "===== OUTPUT - ${CNT} =====" >> "${OUTPUT}"
+    else
+      echo -e "${line}" >> "${OUTPUT}"
+    fi
+    ./scanner ${TMP_FILE} >> "${OUTPUT}" 2>&1
     rm ${TMP_FILE}
     let CNT=CNT+1
 done < "$INPUT"

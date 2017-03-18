@@ -5,6 +5,6 @@
 <"+">
 <"-">
 <integer:4>
-//logical error1:1.23+-4     //logical error
+1:1.23+-4     //logical error
 
 frequencies of identifiers:

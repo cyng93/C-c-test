@@ -1,4 +1,4 @@
-/* 1 - Lexical Defination */
+/* 1 - Lexical Definition */
 // 1.1 delimeters
 ,
 ;
@@ -61,6 +61,7 @@ ident3
 45
 6
 0
+0123
 
 // 1.6 floating point constant
 0.0
@@ -146,3 +147,302 @@ ident3
  * across
  * lines.
  */
+// "line comment with string"
+/*
+ * "block comment with string"
+ */
+
+/* 2 - Pragma source */
+// 2.1 reuse all test case, but without printing source
+#pragma source off
+,
+;
+(
+)
+[
+]
+{
+}
+
++
+-
+*
+/
+%
+<=
+<
+=!
+>=
+>
+==
+&&
+||
+!
+
+while
+do
+if
+else
+true
+false
+for
+int
+print
+const
+read
+boolean
+bool
+void
+float
+double
+string
+continue
+break
+return
+
+ident
+Ident
+IDENT
+_ident
+__indent
+__3ident
+ident3
+
+123
+45
+6
+0
+0123
+
+0.0
+02.03
+123.45
+
+1.23E4
+1.23E+4
+01.23E-4
+123E04
+
+","
+";"
+"("
+")"
+"["
+"]"
+"{"
+"}"
+"+"
+"-"
+"*"
+"/"
+"%"
+"=<"
+"<"
+"=!"
+"=>"
+">"
+"=="
+"&&"
+"||"
+"!"
+"while"
+"do"
+"if"
+"else"
+"true"
+"false"
+"for"
+"int"
+"print"
+"const"
+"read"
+"boolean"
+"bool"
+"void"
+"float"
+"double"
+"string"
+"continue"
+"break"
+"return"
+"ident"
+"Ident"
+"IDENT"
+"_ident"
+"__indent"
+"__3ident"
+"3ident"
+"ident3"
+"ident-3"
+"-indent3"
+"hello world"
+"\"hello world\""
+"hello world\\\\"
+"#pragma source on"
+"#pragma source off"
+"#pragma token on"
+"#pragma token off"
+"#pragma statistic on"
+"#pragma statistic off"
+"//cpp-style comment in string"
+"//c-sytle comment in string"
+
+// C++ syntax line comment
+/* C syntax block comment */
+/*
+ * block comment wrap
+ * across
+ * lines.
+ */
+// "line comment with string"
+/*
+ * "block comment with string"
+ */
+#pragma source on
+
+// 2.2 - reuse test cases in Sec.1, without printing token
+#pragma token off
+,
+;
+(
+)
+[
+]
+{
+}
+
++
+-
+*
+/
+%
+<=
+<
+=!
+>=
+>
+==
+&&
+||
+!
+
+while
+do
+if
+else
+true
+false
+for
+int
+print
+const
+read
+boolean
+bool
+void
+float
+double
+string
+continue
+break
+return
+
+ident
+Ident
+IDENT
+_ident
+__indent
+__3ident
+ident3
+
+123
+45
+6
+0
+0123
+
+0.0
+02.03
+123.45
+
+1.23E4
+1.23E+4
+01.23E-4
+123E04
+
+","
+";"
+"("
+")"
+"["
+"]"
+"{"
+"}"
+"+"
+"-"
+"*"
+"/"
+"%"
+"=<"
+"<"
+"=!"
+"=>"
+">"
+"=="
+"&&"
+"||"
+"!"
+"while"
+"do"
+"if"
+"else"
+"true"
+"false"
+"for"
+"int"
+"print"
+"const"
+"read"
+"boolean"
+"bool"
+"void"
+"float"
+"double"
+"string"
+"continue"
+"break"
+"return"
+"ident"
+"Ident"
+"IDENT"
+"_ident"
+"__indent"
+"__3ident"
+"3ident"
+"ident3"
+"ident-3"
+"-indent3"
+"hello world"
+"\"hello world\""
+"hello world\\\\"
+"#pragma source on"
+"#pragma source off"
+"#pragma token on"
+"#pragma token off"
+"#pragma statistic on"
+"#pragma statistic off"
+"//cpp-style comment in string"
+"//c-sytle comment in string"
+
+// C++ syntax line comment
+/* C syntax block comment */
+/*
+ * block comment wrap
+ * across
+ * lines.
+ */
+// "line comment with string"
+/*
+ * "block comment with string"
+ */
+#pragma token on

@@ -3,6 +3,6 @@
 ===== OUTPUT - 1 =====
 <integer:0>
 <integer:123>
-//logical error1:0123	//logical error
+1:0123	//logical error
 
 frequencies of identifiers:
