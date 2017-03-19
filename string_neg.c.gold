@@ -1,10 +1,10 @@
 ===== _INPUT - 1 =====
-string need to start with double-quote"
+string have to start with double-quote"
 ===== OUTPUT - 1 =====
 Error at line 1: 
 
 <KW:string>
-<id:need>
+<id:have>
 <id:to>
 <id:start>
 <id:with>
@@ -12,7 +12,17 @@ Error at line 1:
 <"-">
 <id:quote>
 ===== _INPUT - 2 =====
-"string need to end with double-quote
+"string have to end with double-quote
 ===== OUTPUT - 2 =====
+Error at line 1: 
+
+===== _INPUT - 3 =====
+"string cannot end with backslash\
+===== OUTPUT - 3 =====
+Error at line 1: 
+
+===== _INPUT - 4 =====
+"string cannot end with double-quote that were escaped\"
+===== OUTPUT - 4 =====
 Error at line 1: 
 
