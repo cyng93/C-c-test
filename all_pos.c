@@ -130,6 +130,9 @@ ident3
 "hello world"
 "\"hello world\""
 "hello world\\\\"
+"hello world\a\b\c\d"
+"string with tab			tab"
+"string with space   space"
 "#pragma source on"
 "#pragma source off"
 "#pragma token on"
@@ -152,8 +155,8 @@ ident3
  * "block comment with string"
  */
 
-/* 2 - Pragma source */
-// 2.1 reuse all test case, but without printing source
+/* 2 - Pragma */
+// 2.1 pragma source - reuse all test case, but without printing source
 #pragma source off
 ,
 ;
@@ -300,7 +303,7 @@ ident3
  */
 #pragma source on
 
-// 2.2 - reuse test cases in Sec.1, without printing token
+// 2.2 - pragma token - reuse test cases in Sec.1, without printing token
 #pragma token off
 ,
 ;
@@ -446,3 +449,10 @@ ident3
  * "block comment with string"
  */
 #pragma token on
+
+// 2.3 - comment can comes after pragma
+#pragma source on  // follow by line comment
+#pragma source on  /* follow by block comment */
+#pragma source on  /* follow by block comment
+wrap across line */
+

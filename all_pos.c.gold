@@ -916,94 +916,114 @@ frequencies of identifiers:
 
 frequencies of identifiers:
 ===== _INPUT - 133 =====
-"#pragma source on"
-===== OUTPUT - 133 =====
-<string:#pragma source on>
-1:"#pragma source on"
+"hello world===== OUTPUT - 133 =====
+<string:hello world\a\b\c\d>
+1:"hello world\a\b\c\d"
 
 frequencies of identifiers:
 ===== _INPUT - 134 =====
-"#pragma source off"
+"string with tab			tab"
 ===== OUTPUT - 134 =====
-<string:#pragma source off>
-1:"#pragma source off"
+<string:string with tab			tab>
+1:"string with tab			tab"
 
 frequencies of identifiers:
 ===== _INPUT - 135 =====
-"#pragma token on"
+"string with space   space"
 ===== OUTPUT - 135 =====
-<string:#pragma token on>
-1:"#pragma token on"
+<string:string with space   space>
+1:"string with space   space"
 
 frequencies of identifiers:
 ===== _INPUT - 136 =====
-"#pragma token off"
+"#pragma source on"
 ===== OUTPUT - 136 =====
-<string:#pragma token off>
-1:"#pragma token off"
+<string:#pragma source on>
+1:"#pragma source on"
 
 frequencies of identifiers:
 ===== _INPUT - 137 =====
-"#pragma statistic on"
+"#pragma source off"
 ===== OUTPUT - 137 =====
-<string:#pragma statistic on>
-1:"#pragma statistic on"
+<string:#pragma source off>
+1:"#pragma source off"
 
 frequencies of identifiers:
 ===== _INPUT - 138 =====
-"#pragma statistic off"
+"#pragma token on"
 ===== OUTPUT - 138 =====
-<string:#pragma statistic off>
-1:"#pragma statistic off"
+<string:#pragma token on>
+1:"#pragma token on"
 
 frequencies of identifiers:
 ===== _INPUT - 139 =====
-"//cpp-style comment in string"
+"#pragma token off"
 ===== OUTPUT - 139 =====
-<string://cpp-style comment in string>
-1:"//cpp-style comment in string"
+<string:#pragma token off>
+1:"#pragma token off"
 
 frequencies of identifiers:
 ===== _INPUT - 140 =====
-"//c-sytle comment in string"
+"#pragma statistic on"
 ===== OUTPUT - 140 =====
-<string://c-sytle comment in string>
-1:"//c-sytle comment in string"
+<string:#pragma statistic on>
+1:"#pragma statistic on"
 
 frequencies of identifiers:
 ===== _INPUT - 141 =====
-
+"#pragma statistic off"
 ===== OUTPUT - 141 =====
-1:
+<string:#pragma statistic off>
+1:"#pragma statistic off"
 
 frequencies of identifiers:
 ===== _INPUT - 142 =====
-// 1.9 Comments - funny but we've already use them above ...
+"//cpp-style comment in string"
 ===== OUTPUT - 142 =====
-1:// 1.9 Comments - funny but we've already use them above ...
+<string://cpp-style comment in string>
+1:"//cpp-style comment in string"
 
 frequencies of identifiers:
 ===== _INPUT - 143 =====
-// C++ syntax line comment
+"//c-sytle comment in string"
 ===== OUTPUT - 143 =====
-1:// C++ syntax line comment
+<string://c-sytle comment in string>
+1:"//c-sytle comment in string"
 
 frequencies of identifiers:
 ===== _INPUT - 144 =====
-/* C syntax block comment */
+
 ===== OUTPUT - 144 =====
-1:/* C syntax block comment */
+1:
 
 frequencies of identifiers:
 ===== _INPUT - 145 =====
-/*
+// 1.9 Comments - funny but we've already use them above ...
 ===== OUTPUT - 145 =====
-1:/*
+1:// 1.9 Comments - funny but we've already use them above ...
 
 frequencies of identifiers:
 ===== _INPUT - 146 =====
- * block comment wrap
+// C++ syntax line comment
 ===== OUTPUT - 146 =====
+1:// C++ syntax line comment
+
+frequencies of identifiers:
+===== _INPUT - 147 =====
+/* C syntax block comment */
+===== OUTPUT - 147 =====
+1:/* C syntax block comment */
+
+frequencies of identifiers:
+===== _INPUT - 148 =====
+/*
+===== OUTPUT - 148 =====
+1:/*
+
+frequencies of identifiers:
+===== _INPUT - 149 =====
+ * block comment wrap
+===== OUTPUT - 149 =====
 <"*">
 <id:block>
 <id:comment>
@@ -1014,2056 +1034,1025 @@ frequencies of identifiers:
 block	1
 comment	1
 wrap	1
-===== _INPUT - 147 =====
+===== _INPUT - 150 =====
  * across
-===== OUTPUT - 147 =====
+===== OUTPUT - 150 =====
 <"*">
 <id:across>
 1: * across
 
 frequencies of identifiers:
 across	1
-===== _INPUT - 148 =====
+===== _INPUT - 151 =====
  * lines.
-===== OUTPUT - 148 =====
+===== OUTPUT - 151 =====
 Error at line 1: .
 <"*">
 <id:lines>
-===== _INPUT - 149 =====
+===== _INPUT - 152 =====
  */
-===== OUTPUT - 149 =====
+===== OUTPUT - 152 =====
 <"*">
 <"/">
 1: */
-
-frequencies of identifiers:
-===== _INPUT - 150 =====
-// "line comment with string"
-===== OUTPUT - 150 =====
-1:// "line comment with string"
-
-frequencies of identifiers:
-===== _INPUT - 151 =====
-/*
-===== OUTPUT - 151 =====
-1:/*
-
-frequencies of identifiers:
-===== _INPUT - 152 =====
- * "block comment with string"
-===== OUTPUT - 152 =====
-<"*">
-<string:block comment with string>
-1: * "block comment with string"
 
 frequencies of identifiers:
 ===== _INPUT - 153 =====
- */
+// "line comment with string"
 ===== OUTPUT - 153 =====
-<"*">
-<"/">
-1: */
+1:// "line comment with string"
 
 frequencies of identifiers:
 ===== _INPUT - 154 =====
-
+/*
 ===== OUTPUT - 154 =====
-1:
+1:/*
 
 frequencies of identifiers:
 ===== _INPUT - 155 =====
-/* 2 - Pragma source */
+ * "block comment with string"
 ===== OUTPUT - 155 =====
-1:/* 2 - Pragma source */
+<"*">
+<string:block comment with string>
+1: * "block comment with string"
 
 frequencies of identifiers:
 ===== _INPUT - 156 =====
-// 2.1 reuse all test case, but without printing source
+ */
 ===== OUTPUT - 156 =====
-1:// 2.1 reuse all test case, but without printing source
+<"*">
+<"/">
+1: */
 
 frequencies of identifiers:
 ===== _INPUT - 157 =====
-#pragma source off
+
 ===== OUTPUT - 157 =====
+1:
+
 frequencies of identifiers:
 ===== _INPUT - 158 =====
-,
+/* 2 - Pragma */
 ===== OUTPUT - 158 =====
-<delim:,>
-1:,
+1:/* 2 - Pragma */
 
 frequencies of identifiers:
 ===== _INPUT - 159 =====
-;
+// 2.1 pragma source - reuse all test case, but without printing source
 ===== OUTPUT - 159 =====
-<delim:;>
-1:;
+1:// 2.1 pragma source - reuse all test case, but without printing source
 
 frequencies of identifiers:
 ===== _INPUT - 160 =====
-(
+#pragma source off
 ===== OUTPUT - 160 =====
-<delim:(>
-1:(
-
 frequencies of identifiers:
 ===== _INPUT - 161 =====
-)
-===== OUTPUT - 161 =====
-<delim:)>
-1:)
-
-frequencies of identifiers:
-===== _INPUT - 162 =====
-[
-===== OUTPUT - 162 =====
-<delim:[>
-1:[
-
-frequencies of identifiers:
-===== _INPUT - 163 =====
-]
-===== OUTPUT - 163 =====
-<delim:]>
-1:]
-
-frequencies of identifiers:
-===== _INPUT - 164 =====
-{
-===== OUTPUT - 164 =====
-<delim:{>
-1:{
-
-frequencies of identifiers:
-===== _INPUT - 165 =====
-}
-===== OUTPUT - 165 =====
-<delim:}>
-1:}
-
-frequencies of identifiers:
-===== _INPUT - 166 =====
-
-===== OUTPUT - 166 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 167 =====
-+
-===== OUTPUT - 167 =====
-<"+">
-1:+
-
-frequencies of identifiers:
-===== _INPUT - 168 =====
--
-===== OUTPUT - 168 =====
-<"-">
-1:-
-
-frequencies of identifiers:
-===== _INPUT - 169 =====
-*
-===== OUTPUT - 169 =====
-<"*">
-1:*
-
-frequencies of identifiers:
-===== _INPUT - 170 =====
-/
-===== OUTPUT - 170 =====
-<"/">
-1:/
-
-frequencies of identifiers:
-===== _INPUT - 171 =====
-%
-===== OUTPUT - 171 =====
-<"%">
-1:%
-
-frequencies of identifiers:
-===== _INPUT - 172 =====
-<=
-===== OUTPUT - 172 =====
-<"<=">
-1:<=
-
-frequencies of identifiers:
-===== _INPUT - 173 =====
-<
-===== OUTPUT - 173 =====
-<"<">
-1:<
-
-frequencies of identifiers:
-===== _INPUT - 174 =====
-=!
-===== OUTPUT - 174 =====
-<"=">
-<"!">
-1:=!
-
-frequencies of identifiers:
-===== _INPUT - 175 =====
->=
-===== OUTPUT - 175 =====
-<">=">
-1:>=
-
-frequencies of identifiers:
-===== _INPUT - 176 =====
->
-===== OUTPUT - 176 =====
-<">">
-1:>
-
-frequencies of identifiers:
-===== _INPUT - 177 =====
-==
-===== OUTPUT - 177 =====
-<"==">
-1:==
-
-frequencies of identifiers:
-===== _INPUT - 178 =====
-&&
-===== OUTPUT - 178 =====
-<"&&">
-1:&&
-
-frequencies of identifiers:
-===== _INPUT - 179 =====
-||
-===== OUTPUT - 179 =====
-<"||">
-1:||
-
-frequencies of identifiers:
-===== _INPUT - 180 =====
-!
-===== OUTPUT - 180 =====
-<"!">
-1:!
-
-frequencies of identifiers:
-===== _INPUT - 181 =====
-
-===== OUTPUT - 181 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 182 =====
-while
-===== OUTPUT - 182 =====
-<KW:while>
-1:while
-
-frequencies of identifiers:
-===== _INPUT - 183 =====
-do
-===== OUTPUT - 183 =====
-<KW:do>
-1:do
-
-frequencies of identifiers:
-===== _INPUT - 184 =====
-if
-===== OUTPUT - 184 =====
-<KW:if>
-1:if
-
-frequencies of identifiers:
-===== _INPUT - 185 =====
-else
-===== OUTPUT - 185 =====
-<KW:else>
-1:else
-
-frequencies of identifiers:
-===== _INPUT - 186 =====
-true
-===== OUTPUT - 186 =====
-<KW:true>
-1:true
-
-frequencies of identifiers:
-===== _INPUT - 187 =====
-false
-===== OUTPUT - 187 =====
-<KW:false>
-1:false
-
-frequencies of identifiers:
-===== _INPUT - 188 =====
-for
-===== OUTPUT - 188 =====
-<KW:for>
-1:for
-
-frequencies of identifiers:
-===== _INPUT - 189 =====
-int
-===== OUTPUT - 189 =====
-<KW:int>
-1:int
-
-frequencies of identifiers:
-===== _INPUT - 190 =====
-print
-===== OUTPUT - 190 =====
-<KW:print>
-1:print
-
-frequencies of identifiers:
-===== _INPUT - 191 =====
-const
-===== OUTPUT - 191 =====
-<KW:const>
-1:const
-
-frequencies of identifiers:
-===== _INPUT - 192 =====
-read
-===== OUTPUT - 192 =====
-<KW:read>
-1:read
-
-frequencies of identifiers:
-===== _INPUT - 193 =====
-boolean
-===== OUTPUT - 193 =====
-<KW:boolean>
-1:boolean
-
-frequencies of identifiers:
-===== _INPUT - 194 =====
-bool
-===== OUTPUT - 194 =====
-<KW:bool>
-1:bool
-
-frequencies of identifiers:
-===== _INPUT - 195 =====
-void
-===== OUTPUT - 195 =====
-<KW:void>
-1:void
-
-frequencies of identifiers:
-===== _INPUT - 196 =====
-float
-===== OUTPUT - 196 =====
-<KW:float>
-1:float
-
-frequencies of identifiers:
-===== _INPUT - 197 =====
-double
-===== OUTPUT - 197 =====
-<KW:double>
-1:double
-
-frequencies of identifiers:
-===== _INPUT - 198 =====
-string
-===== OUTPUT - 198 =====
-<KW:string>
-1:string
-
-frequencies of identifiers:
-===== _INPUT - 199 =====
-continue
-===== OUTPUT - 199 =====
-<KW:continue>
-1:continue
-
-frequencies of identifiers:
-===== _INPUT - 200 =====
-break
-===== OUTPUT - 200 =====
-<KW:break>
-1:break
-
-frequencies of identifiers:
-===== _INPUT - 201 =====
-return
-===== OUTPUT - 201 =====
-<KW:return>
-1:return
-
-frequencies of identifiers:
-===== _INPUT - 202 =====
-
-===== OUTPUT - 202 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 203 =====
-ident
-===== OUTPUT - 203 =====
-<id:ident>
-1:ident
-
-frequencies of identifiers:
-ident	1
-===== _INPUT - 204 =====
-Ident
-===== OUTPUT - 204 =====
-<id:Ident>
-1:Ident
-
-frequencies of identifiers:
-Ident	1
-===== _INPUT - 205 =====
-IDENT
-===== OUTPUT - 205 =====
-<id:IDENT>
-1:IDENT
-
-frequencies of identifiers:
-IDENT	1
-===== _INPUT - 206 =====
-_ident
-===== OUTPUT - 206 =====
-<id:_ident>
-1:_ident
-
-frequencies of identifiers:
-_ident	1
-===== _INPUT - 207 =====
-__indent
-===== OUTPUT - 207 =====
-<id:__indent>
-1:__indent
-
-frequencies of identifiers:
-__indent	1
-===== _INPUT - 208 =====
-__3ident
-===== OUTPUT - 208 =====
-<id:__3ident>
-1:__3ident
-
-frequencies of identifiers:
-__3ident	1
-===== _INPUT - 209 =====
-ident3
-===== OUTPUT - 209 =====
-<id:ident3>
-1:ident3
-
-frequencies of identifiers:
-ident3	1
-===== _INPUT - 210 =====
-
-===== OUTPUT - 210 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 211 =====
-123
-===== OUTPUT - 211 =====
-<integer:123>
-1:123
-
-frequencies of identifiers:
-===== _INPUT - 212 =====
-45
-===== OUTPUT - 212 =====
-<integer:45>
-1:45
-
-frequencies of identifiers:
-===== _INPUT - 213 =====
-6
-===== OUTPUT - 213 =====
-<integer:6>
-1:6
-
-frequencies of identifiers:
-===== _INPUT - 214 =====
-0
-===== OUTPUT - 214 =====
-<integer:0>
-1:0
-
-frequencies of identifiers:
-===== _INPUT - 215 =====
-0123
-===== OUTPUT - 215 =====
-<integer:0>
-<integer:123>
-1:0123
-
-frequencies of identifiers:
-===== _INPUT - 216 =====
-
-===== OUTPUT - 216 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 217 =====
-0.0
-===== OUTPUT - 217 =====
-<float:0.0>
-1:0.0
-
-frequencies of identifiers:
-===== _INPUT - 218 =====
-02.03
-===== OUTPUT - 218 =====
-<float:02.03>
-1:02.03
-
-frequencies of identifiers:
-===== _INPUT - 219 =====
-123.45
-===== OUTPUT - 219 =====
-<float:123.45>
-1:123.45
-
-frequencies of identifiers:
-===== _INPUT - 220 =====
-
-===== OUTPUT - 220 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 221 =====
-1.23E4
-===== OUTPUT - 221 =====
-<scientific:1.23E4>
-1:1.23E4
-
-frequencies of identifiers:
-===== _INPUT - 222 =====
-1.23E+4
-===== OUTPUT - 222 =====
-<scientific:1.23E+4>
-1:1.23E+4
-
-frequencies of identifiers:
-===== _INPUT - 223 =====
-01.23E-4
-===== OUTPUT - 223 =====
-<scientific:01.23E-4>
-1:01.23E-4
-
-frequencies of identifiers:
-===== _INPUT - 224 =====
-123E04
-===== OUTPUT - 224 =====
-<scientific:123E04>
-1:123E04
-
-frequencies of identifiers:
-===== _INPUT - 225 =====
-
-===== OUTPUT - 225 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 226 =====
-","
-===== OUTPUT - 226 =====
-<string:,>
-1:","
-
-frequencies of identifiers:
-===== _INPUT - 227 =====
-";"
-===== OUTPUT - 227 =====
-<string:;>
-1:";"
-
-frequencies of identifiers:
-===== _INPUT - 228 =====
-"("
-===== OUTPUT - 228 =====
-<string:(>
-1:"("
-
-frequencies of identifiers:
-===== _INPUT - 229 =====
-")"
-===== OUTPUT - 229 =====
-<string:)>
-1:")"
-
-frequencies of identifiers:
-===== _INPUT - 230 =====
-"["
-===== OUTPUT - 230 =====
-<string:[>
-1:"["
-
-frequencies of identifiers:
-===== _INPUT - 231 =====
-"]"
-===== OUTPUT - 231 =====
-<string:]>
-1:"]"
-
-frequencies of identifiers:
-===== _INPUT - 232 =====
-"{"
-===== OUTPUT - 232 =====
-<string:{>
-1:"{"
-
-frequencies of identifiers:
-===== _INPUT - 233 =====
-"}"
-===== OUTPUT - 233 =====
-<string:}>
-1:"}"
-
-frequencies of identifiers:
-===== _INPUT - 234 =====
-"+"
-===== OUTPUT - 234 =====
-<string:+>
-1:"+"
-
-frequencies of identifiers:
-===== _INPUT - 235 =====
-"-"
-===== OUTPUT - 235 =====
-<string:->
-1:"-"
-
-frequencies of identifiers:
-===== _INPUT - 236 =====
-"*"
-===== OUTPUT - 236 =====
-<string:*>
-1:"*"
-
-frequencies of identifiers:
-===== _INPUT - 237 =====
-"/"
-===== OUTPUT - 237 =====
-<string:/>
-1:"/"
-
-frequencies of identifiers:
-===== _INPUT - 238 =====
-"%"
-===== OUTPUT - 238 =====
-<string:%>
-1:"%"
-
-frequencies of identifiers:
-===== _INPUT - 239 =====
-"=<"
-===== OUTPUT - 239 =====
-<string:=<>
-1:"=<"
-
-frequencies of identifiers:
-===== _INPUT - 240 =====
-"<"
-===== OUTPUT - 240 =====
-<string:<>
-1:"<"
-
-frequencies of identifiers:
-===== _INPUT - 241 =====
-"=!"
-===== OUTPUT - 241 =====
-<string:=!>
-1:"=!"
-
-frequencies of identifiers:
-===== _INPUT - 242 =====
-"=>"
-===== OUTPUT - 242 =====
-<string:=>>
-1:"=>"
-
-frequencies of identifiers:
-===== _INPUT - 243 =====
-">"
-===== OUTPUT - 243 =====
-<string:>>
-1:">"
-
-frequencies of identifiers:
-===== _INPUT - 244 =====
-"=="
-===== OUTPUT - 244 =====
-<string:==>
-1:"=="
-
-frequencies of identifiers:
-===== _INPUT - 245 =====
-"&&"
-===== OUTPUT - 245 =====
-<string:&&>
-1:"&&"
-
-frequencies of identifiers:
-===== _INPUT - 246 =====
-"||"
-===== OUTPUT - 246 =====
-<string:||>
-1:"||"
-
-frequencies of identifiers:
-===== _INPUT - 247 =====
-"!"
-===== OUTPUT - 247 =====
-<string:!>
-1:"!"
-
-frequencies of identifiers:
-===== _INPUT - 248 =====
-"while"
-===== OUTPUT - 248 =====
-<string:while>
-1:"while"
-
-frequencies of identifiers:
-===== _INPUT - 249 =====
-"do"
-===== OUTPUT - 249 =====
-<string:do>
-1:"do"
-
-frequencies of identifiers:
-===== _INPUT - 250 =====
-"if"
-===== OUTPUT - 250 =====
-<string:if>
-1:"if"
-
-frequencies of identifiers:
-===== _INPUT - 251 =====
-"else"
-===== OUTPUT - 251 =====
-<string:else>
-1:"else"
-
-frequencies of identifiers:
-===== _INPUT - 252 =====
-"true"
-===== OUTPUT - 252 =====
-<string:true>
-1:"true"
-
-frequencies of identifiers:
-===== _INPUT - 253 =====
-"false"
-===== OUTPUT - 253 =====
-<string:false>
-1:"false"
-
-frequencies of identifiers:
-===== _INPUT - 254 =====
-"for"
-===== OUTPUT - 254 =====
-<string:for>
-1:"for"
-
-frequencies of identifiers:
-===== _INPUT - 255 =====
-"int"
-===== OUTPUT - 255 =====
-<string:int>
-1:"int"
-
-frequencies of identifiers:
-===== _INPUT - 256 =====
-"print"
-===== OUTPUT - 256 =====
-<string:print>
-1:"print"
-
-frequencies of identifiers:
-===== _INPUT - 257 =====
-"const"
-===== OUTPUT - 257 =====
-<string:const>
-1:"const"
-
-frequencies of identifiers:
-===== _INPUT - 258 =====
-"read"
-===== OUTPUT - 258 =====
-<string:read>
-1:"read"
-
-frequencies of identifiers:
-===== _INPUT - 259 =====
-"boolean"
-===== OUTPUT - 259 =====
-<string:boolean>
-1:"boolean"
-
-frequencies of identifiers:
-===== _INPUT - 260 =====
-"bool"
-===== OUTPUT - 260 =====
-<string:bool>
-1:"bool"
-
-frequencies of identifiers:
-===== _INPUT - 261 =====
-"void"
-===== OUTPUT - 261 =====
-<string:void>
-1:"void"
-
-frequencies of identifiers:
-===== _INPUT - 262 =====
-"float"
-===== OUTPUT - 262 =====
-<string:float>
-1:"float"
-
-frequencies of identifiers:
-===== _INPUT - 263 =====
-"double"
-===== OUTPUT - 263 =====
-<string:double>
-1:"double"
-
-frequencies of identifiers:
-===== _INPUT - 264 =====
-"string"
-===== OUTPUT - 264 =====
-<string:string>
-1:"string"
-
-frequencies of identifiers:
-===== _INPUT - 265 =====
-"continue"
-===== OUTPUT - 265 =====
-<string:continue>
-1:"continue"
-
-frequencies of identifiers:
-===== _INPUT - 266 =====
-"break"
-===== OUTPUT - 266 =====
-<string:break>
-1:"break"
-
-frequencies of identifiers:
-===== _INPUT - 267 =====
-"return"
-===== OUTPUT - 267 =====
-<string:return>
-1:"return"
-
-frequencies of identifiers:
-===== _INPUT - 268 =====
-"ident"
-===== OUTPUT - 268 =====
-<string:ident>
-1:"ident"
-
-frequencies of identifiers:
-===== _INPUT - 269 =====
-"Ident"
-===== OUTPUT - 269 =====
-<string:Ident>
-1:"Ident"
-
-frequencies of identifiers:
-===== _INPUT - 270 =====
-"IDENT"
-===== OUTPUT - 270 =====
-<string:IDENT>
-1:"IDENT"
-
-frequencies of identifiers:
-===== _INPUT - 271 =====
-"_ident"
-===== OUTPUT - 271 =====
-<string:_ident>
-1:"_ident"
-
-frequencies of identifiers:
-===== _INPUT - 272 =====
-"__indent"
-===== OUTPUT - 272 =====
-<string:__indent>
-1:"__indent"
-
-frequencies of identifiers:
-===== _INPUT - 273 =====
-"__3ident"
-===== OUTPUT - 273 =====
-<string:__3ident>
-1:"__3ident"
-
-frequencies of identifiers:
-===== _INPUT - 274 =====
-"3ident"
-===== OUTPUT - 274 =====
-<string:3ident>
-1:"3ident"
-
-frequencies of identifiers:
-===== _INPUT - 275 =====
-"ident3"
-===== OUTPUT - 275 =====
-<string:ident3>
-1:"ident3"
-
-frequencies of identifiers:
-===== _INPUT - 276 =====
-"ident-3"
-===== OUTPUT - 276 =====
-<string:ident-3>
-1:"ident-3"
-
-frequencies of identifiers:
-===== _INPUT - 277 =====
-"-indent3"
-===== OUTPUT - 277 =====
-<string:-indent3>
-1:"-indent3"
-
-frequencies of identifiers:
-===== _INPUT - 278 =====
-"hello world"
-===== OUTPUT - 278 =====
-<string:hello world>
-1:"hello world"
-
-frequencies of identifiers:
-===== _INPUT - 279 =====
-"\"hello world\""
-===== OUTPUT - 279 =====
-<string:"hello world">
-1:"\"hello world\""
-
-frequencies of identifiers:
-===== _INPUT - 280 =====
-"hello world\\"
-===== OUTPUT - 280 =====
-<string:hello world\\>
-1:"hello world\\\\"
-
-frequencies of identifiers:
-===== _INPUT - 281 =====
-"#pragma source on"
-===== OUTPUT - 281 =====
-<string:#pragma source on>
-1:"#pragma source on"
-
-frequencies of identifiers:
-===== _INPUT - 282 =====
-"#pragma source off"
-===== OUTPUT - 282 =====
-<string:#pragma source off>
-1:"#pragma source off"
-
-frequencies of identifiers:
-===== _INPUT - 283 =====
-"#pragma token on"
-===== OUTPUT - 283 =====
-<string:#pragma token on>
-1:"#pragma token on"
-
-frequencies of identifiers:
-===== _INPUT - 284 =====
-"#pragma token off"
-===== OUTPUT - 284 =====
-<string:#pragma token off>
-1:"#pragma token off"
-
-frequencies of identifiers:
-===== _INPUT - 285 =====
-"#pragma statistic on"
-===== OUTPUT - 285 =====
-<string:#pragma statistic on>
-1:"#pragma statistic on"
-
-frequencies of identifiers:
-===== _INPUT - 286 =====
-"#pragma statistic off"
-===== OUTPUT - 286 =====
-<string:#pragma statistic off>
-1:"#pragma statistic off"
-
-frequencies of identifiers:
-===== _INPUT - 287 =====
-"//cpp-style comment in string"
-===== OUTPUT - 287 =====
-<string://cpp-style comment in string>
-1:"//cpp-style comment in string"
-
-frequencies of identifiers:
-===== _INPUT - 288 =====
-"//c-sytle comment in string"
-===== OUTPUT - 288 =====
-<string://c-sytle comment in string>
-1:"//c-sytle comment in string"
-
-frequencies of identifiers:
-===== _INPUT - 289 =====
-
-===== OUTPUT - 289 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 290 =====
-// C++ syntax line comment
-===== OUTPUT - 290 =====
-1:// C++ syntax line comment
-
-frequencies of identifiers:
-===== _INPUT - 291 =====
-/* C syntax block comment */
-===== OUTPUT - 291 =====
-1:/* C syntax block comment */
-
-frequencies of identifiers:
-===== _INPUT - 292 =====
-/*
-===== OUTPUT - 292 =====
-1:/*
-
-frequencies of identifiers:
-===== _INPUT - 293 =====
- * block comment wrap
-===== OUTPUT - 293 =====
-<"*">
-<id:block>
-<id:comment>
-<id:wrap>
-1: * block comment wrap
-
-frequencies of identifiers:
-block	1
-comment	1
-wrap	1
-===== _INPUT - 294 =====
- * across
-===== OUTPUT - 294 =====
-<"*">
-<id:across>
-1: * across
-
-frequencies of identifiers:
-across	1
-===== _INPUT - 295 =====
- * lines.
-===== OUTPUT - 295 =====
-Error at line 1: .
-<"*">
-<id:lines>
-===== _INPUT - 296 =====
- */
-===== OUTPUT - 296 =====
-<"*">
-<"/">
-1: */
-
-frequencies of identifiers:
-===== _INPUT - 297 =====
-// "line comment with string"
-===== OUTPUT - 297 =====
-1:// "line comment with string"
-
-frequencies of identifiers:
-===== _INPUT - 298 =====
-/*
-===== OUTPUT - 298 =====
-1:/*
-
-frequencies of identifiers:
-===== _INPUT - 299 =====
- * "block comment with string"
-===== OUTPUT - 299 =====
-<"*">
-<string:block comment with string>
-1: * "block comment with string"
-
-frequencies of identifiers:
-===== _INPUT - 300 =====
- */
-===== OUTPUT - 300 =====
-<"*">
-<"/">
-1: */
-
-frequencies of identifiers:
-===== _INPUT - 301 =====
-#pragma source on
-===== OUTPUT - 301 =====
-1:#pragma source on
-
-frequencies of identifiers:
-===== _INPUT - 302 =====
-
-===== OUTPUT - 302 =====
-1:
-
-frequencies of identifiers:
-===== _INPUT - 303 =====
-// 2.2 - reuse test cases in Sec.1, without printing token
-===== OUTPUT - 303 =====
-1:// 2.2 - reuse test cases in Sec.1, without printing token
-
-frequencies of identifiers:
-===== _INPUT - 304 =====
-#pragma token off
-===== OUTPUT - 304 =====
-1:#pragma token off
-
-frequencies of identifiers:
-===== _INPUT - 305 =====
 ,
-===== OUTPUT - 305 =====
+===== OUTPUT - 161 =====
 <delim:,>
 1:,
 
 frequencies of identifiers:
-===== _INPUT - 306 =====
+===== _INPUT - 162 =====
 ;
-===== OUTPUT - 306 =====
+===== OUTPUT - 162 =====
 <delim:;>
 1:;
 
 frequencies of identifiers:
-===== _INPUT - 307 =====
+===== _INPUT - 163 =====
 (
-===== OUTPUT - 307 =====
+===== OUTPUT - 163 =====
 <delim:(>
 1:(
 
 frequencies of identifiers:
-===== _INPUT - 308 =====
+===== _INPUT - 164 =====
 )
-===== OUTPUT - 308 =====
+===== OUTPUT - 164 =====
 <delim:)>
 1:)
 
 frequencies of identifiers:
-===== _INPUT - 309 =====
+===== _INPUT - 165 =====
 [
-===== OUTPUT - 309 =====
+===== OUTPUT - 165 =====
 <delim:[>
 1:[
 
 frequencies of identifiers:
-===== _INPUT - 310 =====
+===== _INPUT - 166 =====
 ]
-===== OUTPUT - 310 =====
+===== OUTPUT - 166 =====
 <delim:]>
 1:]
 
 frequencies of identifiers:
-===== _INPUT - 311 =====
+===== _INPUT - 167 =====
 {
-===== OUTPUT - 311 =====
+===== OUTPUT - 167 =====
 <delim:{>
 1:{
 
 frequencies of identifiers:
-===== _INPUT - 312 =====
+===== _INPUT - 168 =====
 }
-===== OUTPUT - 312 =====
+===== OUTPUT - 168 =====
 <delim:}>
 1:}
 
 frequencies of identifiers:
-===== _INPUT - 313 =====
+===== _INPUT - 169 =====
 
-===== OUTPUT - 313 =====
+===== OUTPUT - 169 =====
 1:
 
 frequencies of identifiers:
-===== _INPUT - 314 =====
+===== _INPUT - 170 =====
 +
-===== OUTPUT - 314 =====
+===== OUTPUT - 170 =====
 <"+">
 1:+
 
 frequencies of identifiers:
-===== _INPUT - 315 =====
+===== _INPUT - 171 =====
 -
-===== OUTPUT - 315 =====
+===== OUTPUT - 171 =====
 <"-">
 1:-
 
 frequencies of identifiers:
-===== _INPUT - 316 =====
+===== _INPUT - 172 =====
 *
-===== OUTPUT - 316 =====
+===== OUTPUT - 172 =====
 <"*">
 1:*
 
 frequencies of identifiers:
-===== _INPUT - 317 =====
+===== _INPUT - 173 =====
 /
-===== OUTPUT - 317 =====
+===== OUTPUT - 173 =====
 <"/">
 1:/
 
 frequencies of identifiers:
-===== _INPUT - 318 =====
+===== _INPUT - 174 =====
 %
-===== OUTPUT - 318 =====
+===== OUTPUT - 174 =====
 <"%">
 1:%
 
 frequencies of identifiers:
-===== _INPUT - 319 =====
+===== _INPUT - 175 =====
 <=
-===== OUTPUT - 319 =====
+===== OUTPUT - 175 =====
 <"<=">
 1:<=
 
 frequencies of identifiers:
-===== _INPUT - 320 =====
+===== _INPUT - 176 =====
 <
-===== OUTPUT - 320 =====
+===== OUTPUT - 176 =====
 <"<">
 1:<
 
 frequencies of identifiers:
-===== _INPUT - 321 =====
+===== _INPUT - 177 =====
 =!
-===== OUTPUT - 321 =====
+===== OUTPUT - 177 =====
 <"=">
 <"!">
 1:=!
 
 frequencies of identifiers:
-===== _INPUT - 322 =====
+===== _INPUT - 178 =====
 >=
-===== OUTPUT - 322 =====
+===== OUTPUT - 178 =====
 <">=">
 1:>=
 
 frequencies of identifiers:
-===== _INPUT - 323 =====
+===== _INPUT - 179 =====
 >
-===== OUTPUT - 323 =====
+===== OUTPUT - 179 =====
 <">">
 1:>
 
 frequencies of identifiers:
-===== _INPUT - 324 =====
+===== _INPUT - 180 =====
 ==
-===== OUTPUT - 324 =====
+===== OUTPUT - 180 =====
 <"==">
 1:==
 
 frequencies of identifiers:
-===== _INPUT - 325 =====
+===== _INPUT - 181 =====
 &&
-===== OUTPUT - 325 =====
+===== OUTPUT - 181 =====
 <"&&">
 1:&&
 
 frequencies of identifiers:
-===== _INPUT - 326 =====
+===== _INPUT - 182 =====
 ||
-===== OUTPUT - 326 =====
+===== OUTPUT - 182 =====
 <"||">
 1:||
 
 frequencies of identifiers:
-===== _INPUT - 327 =====
+===== _INPUT - 183 =====
 !
-===== OUTPUT - 327 =====
+===== OUTPUT - 183 =====
 <"!">
 1:!
 
 frequencies of identifiers:
-===== _INPUT - 328 =====
+===== _INPUT - 184 =====
 
-===== OUTPUT - 328 =====
+===== OUTPUT - 184 =====
 1:
 
 frequencies of identifiers:
-===== _INPUT - 329 =====
+===== _INPUT - 185 =====
 while
-===== OUTPUT - 329 =====
+===== OUTPUT - 185 =====
 <KW:while>
 1:while
 
 frequencies of identifiers:
-===== _INPUT - 330 =====
+===== _INPUT - 186 =====
 do
-===== OUTPUT - 330 =====
+===== OUTPUT - 186 =====
 <KW:do>
 1:do
 
 frequencies of identifiers:
-===== _INPUT - 331 =====
+===== _INPUT - 187 =====
 if
-===== OUTPUT - 331 =====
+===== OUTPUT - 187 =====
 <KW:if>
 1:if
 
 frequencies of identifiers:
-===== _INPUT - 332 =====
+===== _INPUT - 188 =====
 else
-===== OUTPUT - 332 =====
+===== OUTPUT - 188 =====
 <KW:else>
 1:else
 
 frequencies of identifiers:
-===== _INPUT - 333 =====
+===== _INPUT - 189 =====
 true
-===== OUTPUT - 333 =====
+===== OUTPUT - 189 =====
 <KW:true>
 1:true
 
 frequencies of identifiers:
-===== _INPUT - 334 =====
+===== _INPUT - 190 =====
 false
-===== OUTPUT - 334 =====
+===== OUTPUT - 190 =====
 <KW:false>
 1:false
 
 frequencies of identifiers:
-===== _INPUT - 335 =====
+===== _INPUT - 191 =====
 for
-===== OUTPUT - 335 =====
+===== OUTPUT - 191 =====
 <KW:for>
 1:for
 
 frequencies of identifiers:
-===== _INPUT - 336 =====
+===== _INPUT - 192 =====
 int
-===== OUTPUT - 336 =====
+===== OUTPUT - 192 =====
 <KW:int>
 1:int
 
 frequencies of identifiers:
-===== _INPUT - 337 =====
+===== _INPUT - 193 =====
 print
-===== OUTPUT - 337 =====
+===== OUTPUT - 193 =====
 <KW:print>
 1:print
 
 frequencies of identifiers:
-===== _INPUT - 338 =====
+===== _INPUT - 194 =====
 const
-===== OUTPUT - 338 =====
+===== OUTPUT - 194 =====
 <KW:const>
 1:const
 
 frequencies of identifiers:
-===== _INPUT - 339 =====
+===== _INPUT - 195 =====
 read
-===== OUTPUT - 339 =====
+===== OUTPUT - 195 =====
 <KW:read>
 1:read
 
 frequencies of identifiers:
-===== _INPUT - 340 =====
+===== _INPUT - 196 =====
 boolean
-===== OUTPUT - 340 =====
+===== OUTPUT - 196 =====
 <KW:boolean>
 1:boolean
 
 frequencies of identifiers:
-===== _INPUT - 341 =====
+===== _INPUT - 197 =====
 bool
-===== OUTPUT - 341 =====
+===== OUTPUT - 197 =====
 <KW:bool>
 1:bool
 
 frequencies of identifiers:
-===== _INPUT - 342 =====
+===== _INPUT - 198 =====
 void
-===== OUTPUT - 342 =====
+===== OUTPUT - 198 =====
 <KW:void>
 1:void
 
 frequencies of identifiers:
-===== _INPUT - 343 =====
+===== _INPUT - 199 =====
 float
-===== OUTPUT - 343 =====
+===== OUTPUT - 199 =====
 <KW:float>
 1:float
 
 frequencies of identifiers:
-===== _INPUT - 344 =====
+===== _INPUT - 200 =====
 double
-===== OUTPUT - 344 =====
+===== OUTPUT - 200 =====
 <KW:double>
 1:double
 
 frequencies of identifiers:
-===== _INPUT - 345 =====
+===== _INPUT - 201 =====
 string
-===== OUTPUT - 345 =====
+===== OUTPUT - 201 =====
 <KW:string>
 1:string
 
 frequencies of identifiers:
-===== _INPUT - 346 =====
+===== _INPUT - 202 =====
 continue
-===== OUTPUT - 346 =====
+===== OUTPUT - 202 =====
 <KW:continue>
 1:continue
 
 frequencies of identifiers:
-===== _INPUT - 347 =====
+===== _INPUT - 203 =====
 break
-===== OUTPUT - 347 =====
+===== OUTPUT - 203 =====
 <KW:break>
 1:break
 
 frequencies of identifiers:
-===== _INPUT - 348 =====
+===== _INPUT - 204 =====
 return
-===== OUTPUT - 348 =====
+===== OUTPUT - 204 =====
 <KW:return>
 1:return
 
 frequencies of identifiers:
-===== _INPUT - 349 =====
+===== _INPUT - 205 =====
 
-===== OUTPUT - 349 =====
+===== OUTPUT - 205 =====
 1:
 
 frequencies of identifiers:
-===== _INPUT - 350 =====
+===== _INPUT - 206 =====
 ident
-===== OUTPUT - 350 =====
+===== OUTPUT - 206 =====
 <id:ident>
 1:ident
 
 frequencies of identifiers:
 ident	1
-===== _INPUT - 351 =====
+===== _INPUT - 207 =====
 Ident
-===== OUTPUT - 351 =====
+===== OUTPUT - 207 =====
 <id:Ident>
 1:Ident
 
 frequencies of identifiers:
 Ident	1
-===== _INPUT - 352 =====
+===== _INPUT - 208 =====
 IDENT
-===== OUTPUT - 352 =====
+===== OUTPUT - 208 =====
 <id:IDENT>
 1:IDENT
 
 frequencies of identifiers:
 IDENT	1
-===== _INPUT - 353 =====
+===== _INPUT - 209 =====
 _ident
-===== OUTPUT - 353 =====
+===== OUTPUT - 209 =====
 <id:_ident>
 1:_ident
 
 frequencies of identifiers:
 _ident	1
-===== _INPUT - 354 =====
+===== _INPUT - 210 =====
 __indent
-===== OUTPUT - 354 =====
+===== OUTPUT - 210 =====
 <id:__indent>
 1:__indent
 
 frequencies of identifiers:
 __indent	1
-===== _INPUT - 355 =====
+===== _INPUT - 211 =====
 __3ident
-===== OUTPUT - 355 =====
+===== OUTPUT - 211 =====
 <id:__3ident>
 1:__3ident
 
 frequencies of identifiers:
 __3ident	1
-===== _INPUT - 356 =====
+===== _INPUT - 212 =====
 ident3
-===== OUTPUT - 356 =====
+===== OUTPUT - 212 =====
 <id:ident3>
 1:ident3
 
 frequencies of identifiers:
 ident3	1
-===== _INPUT - 357 =====
+===== _INPUT - 213 =====
 
-===== OUTPUT - 357 =====
+===== OUTPUT - 213 =====
 1:
 
 frequencies of identifiers:
-===== _INPUT - 358 =====
+===== _INPUT - 214 =====
 123
-===== OUTPUT - 358 =====
+===== OUTPUT - 214 =====
 <integer:123>
 1:123
 
 frequencies of identifiers:
-===== _INPUT - 359 =====
+===== _INPUT - 215 =====
 45
-===== OUTPUT - 359 =====
+===== OUTPUT - 215 =====
 <integer:45>
 1:45
 
 frequencies of identifiers:
-===== _INPUT - 360 =====
+===== _INPUT - 216 =====
 6
-===== OUTPUT - 360 =====
+===== OUTPUT - 216 =====
 <integer:6>
 1:6
 
 frequencies of identifiers:
-===== _INPUT - 361 =====
+===== _INPUT - 217 =====
 0
-===== OUTPUT - 361 =====
+===== OUTPUT - 217 =====
 <integer:0>
 1:0
 
 frequencies of identifiers:
-===== _INPUT - 362 =====
+===== _INPUT - 218 =====
 0123
-===== OUTPUT - 362 =====
+===== OUTPUT - 218 =====
 <integer:0>
 <integer:123>
 1:0123
 
 frequencies of identifiers:
-===== _INPUT - 363 =====
+===== _INPUT - 219 =====
 
-===== OUTPUT - 363 =====
+===== OUTPUT - 219 =====
 1:
 
 frequencies of identifiers:
-===== _INPUT - 364 =====
+===== _INPUT - 220 =====
 0.0
-===== OUTPUT - 364 =====
+===== OUTPUT - 220 =====
 <float:0.0>
 1:0.0
 
 frequencies of identifiers:
-===== _INPUT - 365 =====
+===== _INPUT - 221 =====
 02.03
-===== OUTPUT - 365 =====
+===== OUTPUT - 221 =====
 <float:02.03>
 1:02.03
 
 frequencies of identifiers:
-===== _INPUT - 366 =====
+===== _INPUT - 222 =====
 123.45
-===== OUTPUT - 366 =====
+===== OUTPUT - 222 =====
 <float:123.45>
 1:123.45
 
 frequencies of identifiers:
-===== _INPUT - 367 =====
+===== _INPUT - 223 =====
 
-===== OUTPUT - 367 =====
+===== OUTPUT - 223 =====
 1:
 
 frequencies of identifiers:
-===== _INPUT - 368 =====
+===== _INPUT - 224 =====
 1.23E4
-===== OUTPUT - 368 =====
+===== OUTPUT - 224 =====
 <scientific:1.23E4>
 1:1.23E4
 
 frequencies of identifiers:
-===== _INPUT - 369 =====
+===== _INPUT - 225 =====
 1.23E+4
-===== OUTPUT - 369 =====
+===== OUTPUT - 225 =====
 <scientific:1.23E+4>
 1:1.23E+4
 
 frequencies of identifiers:
-===== _INPUT - 370 =====
+===== _INPUT - 226 =====
 01.23E-4
-===== OUTPUT - 370 =====
+===== OUTPUT - 226 =====
 <scientific:01.23E-4>
 1:01.23E-4
 
 frequencies of identifiers:
-===== _INPUT - 371 =====
+===== _INPUT - 227 =====
 123E04
-===== OUTPUT - 371 =====
+===== OUTPUT - 227 =====
 <scientific:123E04>
 1:123E04
 
 frequencies of identifiers:
-===== _INPUT - 372 =====
+===== _INPUT - 228 =====
 
-===== OUTPUT - 372 =====
+===== OUTPUT - 228 =====
 1:
 
 frequencies of identifiers:
-===== _INPUT - 373 =====
+===== _INPUT - 229 =====
 ","
-===== OUTPUT - 373 =====
+===== OUTPUT - 229 =====
 <string:,>
 1:","
 
 frequencies of identifiers:
-===== _INPUT - 374 =====
+===== _INPUT - 230 =====
 ";"
-===== OUTPUT - 374 =====
+===== OUTPUT - 230 =====
 <string:;>
 1:";"
 
 frequencies of identifiers:
-===== _INPUT - 375 =====
+===== _INPUT - 231 =====
 "("
-===== OUTPUT - 375 =====
+===== OUTPUT - 231 =====
 <string:(>
 1:"("
 
 frequencies of identifiers:
-===== _INPUT - 376 =====
+===== _INPUT - 232 =====
 ")"
-===== OUTPUT - 376 =====
+===== OUTPUT - 232 =====
 <string:)>
 1:")"
 
 frequencies of identifiers:
-===== _INPUT - 377 =====
+===== _INPUT - 233 =====
 "["
-===== OUTPUT - 377 =====
+===== OUTPUT - 233 =====
 <string:[>
 1:"["
 
 frequencies of identifiers:
-===== _INPUT - 378 =====
+===== _INPUT - 234 =====
 "]"
-===== OUTPUT - 378 =====
+===== OUTPUT - 234 =====
 <string:]>
 1:"]"
 
 frequencies of identifiers:
-===== _INPUT - 379 =====
+===== _INPUT - 235 =====
 "{"
-===== OUTPUT - 379 =====
+===== OUTPUT - 235 =====
 <string:{>
 1:"{"
 
 frequencies of identifiers:
-===== _INPUT - 380 =====
+===== _INPUT - 236 =====
 "}"
-===== OUTPUT - 380 =====
+===== OUTPUT - 236 =====
 <string:}>
 1:"}"
 
 frequencies of identifiers:
-===== _INPUT - 381 =====
+===== _INPUT - 237 =====
 "+"
-===== OUTPUT - 381 =====
+===== OUTPUT - 237 =====
 <string:+>
 1:"+"
 
 frequencies of identifiers:
-===== _INPUT - 382 =====
+===== _INPUT - 238 =====
 "-"
-===== OUTPUT - 382 =====
+===== OUTPUT - 238 =====
 <string:->
 1:"-"
 
 frequencies of identifiers:
-===== _INPUT - 383 =====
+===== _INPUT - 239 =====
 "*"
-===== OUTPUT - 383 =====
+===== OUTPUT - 239 =====
 <string:*>
 1:"*"
 
 frequencies of identifiers:
-===== _INPUT - 384 =====
+===== _INPUT - 240 =====
 "/"
-===== OUTPUT - 384 =====
+===== OUTPUT - 240 =====
 <string:/>
 1:"/"
 
 frequencies of identifiers:
-===== _INPUT - 385 =====
+===== _INPUT - 241 =====
 "%"
-===== OUTPUT - 385 =====
+===== OUTPUT - 241 =====
 <string:%>
 1:"%"
 
 frequencies of identifiers:
-===== _INPUT - 386 =====
+===== _INPUT - 242 =====
 "=<"
-===== OUTPUT - 386 =====
+===== OUTPUT - 242 =====
 <string:=<>
 1:"=<"
 
 frequencies of identifiers:
-===== _INPUT - 387 =====
+===== _INPUT - 243 =====
 "<"
-===== OUTPUT - 387 =====
+===== OUTPUT - 243 =====
 <string:<>
 1:"<"
 
 frequencies of identifiers:
-===== _INPUT - 388 =====
+===== _INPUT - 244 =====
 "=!"
-===== OUTPUT - 388 =====
+===== OUTPUT - 244 =====
 <string:=!>
 1:"=!"
 
 frequencies of identifiers:
-===== _INPUT - 389 =====
+===== _INPUT - 245 =====
 "=>"
-===== OUTPUT - 389 =====
+===== OUTPUT - 245 =====
 <string:=>>
 1:"=>"
 
 frequencies of identifiers:
-===== _INPUT - 390 =====
+===== _INPUT - 246 =====
 ">"
-===== OUTPUT - 390 =====
+===== OUTPUT - 246 =====
 <string:>>
 1:">"
 
 frequencies of identifiers:
-===== _INPUT - 391 =====
+===== _INPUT - 247 =====
 "=="
-===== OUTPUT - 391 =====
+===== OUTPUT - 247 =====
 <string:==>
 1:"=="
 
 frequencies of identifiers:
-===== _INPUT - 392 =====
+===== _INPUT - 248 =====
 "&&"
-===== OUTPUT - 392 =====
+===== OUTPUT - 248 =====
 <string:&&>
 1:"&&"
 
 frequencies of identifiers:
-===== _INPUT - 393 =====
+===== _INPUT - 249 =====
 "||"
-===== OUTPUT - 393 =====
+===== OUTPUT - 249 =====
 <string:||>
 1:"||"
 
 frequencies of identifiers:
-===== _INPUT - 394 =====
+===== _INPUT - 250 =====
 "!"
-===== OUTPUT - 394 =====
+===== OUTPUT - 250 =====
 <string:!>
 1:"!"
 
 frequencies of identifiers:
-===== _INPUT - 395 =====
+===== _INPUT - 251 =====
 "while"
-===== OUTPUT - 395 =====
+===== OUTPUT - 251 =====
 <string:while>
 1:"while"
 
 frequencies of identifiers:
-===== _INPUT - 396 =====
+===== _INPUT - 252 =====
 "do"
-===== OUTPUT - 396 =====
+===== OUTPUT - 252 =====
 <string:do>
 1:"do"
 
 frequencies of identifiers:
-===== _INPUT - 397 =====
+===== _INPUT - 253 =====
 "if"
-===== OUTPUT - 397 =====
+===== OUTPUT - 253 =====
 <string:if>
 1:"if"
 
 frequencies of identifiers:
-===== _INPUT - 398 =====
+===== _INPUT - 254 =====
 "else"
-===== OUTPUT - 398 =====
+===== OUTPUT - 254 =====
 <string:else>
 1:"else"
 
 frequencies of identifiers:
-===== _INPUT - 399 =====
+===== _INPUT - 255 =====
 "true"
-===== OUTPUT - 399 =====
+===== OUTPUT - 255 =====
 <string:true>
 1:"true"
 
 frequencies of identifiers:
-===== _INPUT - 400 =====
+===== _INPUT - 256 =====
 "false"
-===== OUTPUT - 400 =====
+===== OUTPUT - 256 =====
 <string:false>
 1:"false"
 
 frequencies of identifiers:
-===== _INPUT - 401 =====
+===== _INPUT - 257 =====
 "for"
-===== OUTPUT - 401 =====
+===== OUTPUT - 257 =====
 <string:for>
 1:"for"
 
 frequencies of identifiers:
-===== _INPUT - 402 =====
+===== _INPUT - 258 =====
 "int"
-===== OUTPUT - 402 =====
+===== OUTPUT - 258 =====
 <string:int>
 1:"int"
 
 frequencies of identifiers:
-===== _INPUT - 403 =====
+===== _INPUT - 259 =====
 "print"
-===== OUTPUT - 403 =====
+===== OUTPUT - 259 =====
 <string:print>
 1:"print"
 
 frequencies of identifiers:
-===== _INPUT - 404 =====
+===== _INPUT - 260 =====
 "const"
-===== OUTPUT - 404 =====
+===== OUTPUT - 260 =====
 <string:const>
 1:"const"
 
 frequencies of identifiers:
-===== _INPUT - 405 =====
+===== _INPUT - 261 =====
 "read"
-===== OUTPUT - 405 =====
+===== OUTPUT - 261 =====
 <string:read>
 1:"read"
 
 frequencies of identifiers:
-===== _INPUT - 406 =====
+===== _INPUT - 262 =====
 "boolean"
-===== OUTPUT - 406 =====
+===== OUTPUT - 262 =====
 <string:boolean>
 1:"boolean"
 
 frequencies of identifiers:
-===== _INPUT - 407 =====
+===== _INPUT - 263 =====
 "bool"
-===== OUTPUT - 407 =====
+===== OUTPUT - 263 =====
 <string:bool>
 1:"bool"
 
 frequencies of identifiers:
-===== _INPUT - 408 =====
+===== _INPUT - 264 =====
 "void"
-===== OUTPUT - 408 =====
+===== OUTPUT - 264 =====
 <string:void>
 1:"void"
 
 frequencies of identifiers:
-===== _INPUT - 409 =====
+===== _INPUT - 265 =====
 "float"
-===== OUTPUT - 409 =====
+===== OUTPUT - 265 =====
 <string:float>
 1:"float"
 
 frequencies of identifiers:
-===== _INPUT - 410 =====
+===== _INPUT - 266 =====
 "double"
-===== OUTPUT - 410 =====
+===== OUTPUT - 266 =====
 <string:double>
 1:"double"
 
 frequencies of identifiers:
-===== _INPUT - 411 =====
+===== _INPUT - 267 =====
 "string"
-===== OUTPUT - 411 =====
+===== OUTPUT - 267 =====
 <string:string>
 1:"string"
 
 frequencies of identifiers:
-===== _INPUT - 412 =====
+===== _INPUT - 268 =====
 "continue"
-===== OUTPUT - 412 =====
+===== OUTPUT - 268 =====
 <string:continue>
 1:"continue"
 
 frequencies of identifiers:
-===== _INPUT - 413 =====
+===== _INPUT - 269 =====
 "break"
-===== OUTPUT - 413 =====
+===== OUTPUT - 269 =====
 <string:break>
 1:"break"
 
 frequencies of identifiers:
-===== _INPUT - 414 =====
+===== _INPUT - 270 =====
 "return"
-===== OUTPUT - 414 =====
+===== OUTPUT - 270 =====
 <string:return>
 1:"return"
 
 frequencies of identifiers:
-===== _INPUT - 415 =====
+===== _INPUT - 271 =====
 "ident"
-===== OUTPUT - 415 =====
+===== OUTPUT - 271 =====
 <string:ident>
 1:"ident"
 
 frequencies of identifiers:
-===== _INPUT - 416 =====
+===== _INPUT - 272 =====
 "Ident"
-===== OUTPUT - 416 =====
+===== OUTPUT - 272 =====
 <string:Ident>
 1:"Ident"
 
 frequencies of identifiers:
-===== _INPUT - 417 =====
+===== _INPUT - 273 =====
 "IDENT"
-===== OUTPUT - 417 =====
+===== OUTPUT - 273 =====
 <string:IDENT>
 1:"IDENT"
 
 frequencies of identifiers:
-===== _INPUT - 418 =====
+===== _INPUT - 274 =====
 "_ident"
-===== OUTPUT - 418 =====
+===== OUTPUT - 274 =====
 <string:_ident>
 1:"_ident"
 
 frequencies of identifiers:
-===== _INPUT - 419 =====
+===== _INPUT - 275 =====
 "__indent"
-===== OUTPUT - 419 =====
+===== OUTPUT - 275 =====
 <string:__indent>
 1:"__indent"
 
 frequencies of identifiers:
-===== _INPUT - 420 =====
+===== _INPUT - 276 =====
 "__3ident"
-===== OUTPUT - 420 =====
+===== OUTPUT - 276 =====
 <string:__3ident>
 1:"__3ident"
 
 frequencies of identifiers:
-===== _INPUT - 421 =====
+===== _INPUT - 277 =====
 "3ident"
-===== OUTPUT - 421 =====
+===== OUTPUT - 277 =====
 <string:3ident>
 1:"3ident"
 
 frequencies of identifiers:
-===== _INPUT - 422 =====
+===== _INPUT - 278 =====
 "ident3"
-===== OUTPUT - 422 =====
+===== OUTPUT - 278 =====
 <string:ident3>
 1:"ident3"
 
 frequencies of identifiers:
-===== _INPUT - 423 =====
+===== _INPUT - 279 =====
 "ident-3"
-===== OUTPUT - 423 =====
+===== OUTPUT - 279 =====
 <string:ident-3>
 1:"ident-3"
 
 frequencies of identifiers:
-===== _INPUT - 424 =====
+===== _INPUT - 280 =====
 "-indent3"
-===== OUTPUT - 424 =====
+===== OUTPUT - 280 =====
 <string:-indent3>
 1:"-indent3"
 
 frequencies of identifiers:
-===== _INPUT - 425 =====
+===== _INPUT - 281 =====
 "hello world"
-===== OUTPUT - 425 =====
+===== OUTPUT - 281 =====
 <string:hello world>
 1:"hello world"
 
 frequencies of identifiers:
-===== _INPUT - 426 =====
+===== _INPUT - 282 =====
 "\"hello world\""
-===== OUTPUT - 426 =====
+===== OUTPUT - 282 =====
 <string:"hello world">
 1:"\"hello world\""
 
 frequencies of identifiers:
-===== _INPUT - 427 =====
+===== _INPUT - 283 =====
 "hello world\\"
-===== OUTPUT - 427 =====
+===== OUTPUT - 283 =====
 <string:hello world\\>
 1:"hello world\\\\"
 
 frequencies of identifiers:
-===== _INPUT - 428 =====
+===== _INPUT - 284 =====
 "#pragma source on"
-===== OUTPUT - 428 =====
+===== OUTPUT - 284 =====
 <string:#pragma source on>
 1:"#pragma source on"
 
 frequencies of identifiers:
-===== _INPUT - 429 =====
+===== _INPUT - 285 =====
 "#pragma source off"
-===== OUTPUT - 429 =====
+===== OUTPUT - 285 =====
 <string:#pragma source off>
 1:"#pragma source off"
 
 frequencies of identifiers:
-===== _INPUT - 430 =====
+===== _INPUT - 286 =====
 "#pragma token on"
-===== OUTPUT - 430 =====
+===== OUTPUT - 286 =====
 <string:#pragma token on>
 1:"#pragma token on"
 
 frequencies of identifiers:
-===== _INPUT - 431 =====
+===== _INPUT - 287 =====
 "#pragma token off"
-===== OUTPUT - 431 =====
+===== OUTPUT - 287 =====
 <string:#pragma token off>
 1:"#pragma token off"
 
 frequencies of identifiers:
-===== _INPUT - 432 =====
+===== _INPUT - 288 =====
 "#pragma statistic on"
-===== OUTPUT - 432 =====
+===== OUTPUT - 288 =====
 <string:#pragma statistic on>
 1:"#pragma statistic on"
 
 frequencies of identifiers:
-===== _INPUT - 433 =====
+===== _INPUT - 289 =====
 "#pragma statistic off"
-===== OUTPUT - 433 =====
+===== OUTPUT - 289 =====
 <string:#pragma statistic off>
 1:"#pragma statistic off"
 
 frequencies of identifiers:
-===== _INPUT - 434 =====
+===== _INPUT - 290 =====
 "//cpp-style comment in string"
-===== OUTPUT - 434 =====
+===== OUTPUT - 290 =====
 <string://cpp-style comment in string>
 1:"//cpp-style comment in string"
 
 frequencies of identifiers:
-===== _INPUT - 435 =====
+===== _INPUT - 291 =====
 "//c-sytle comment in string"
-===== OUTPUT - 435 =====
+===== OUTPUT - 291 =====
 <string://c-sytle comment in string>
 1:"//c-sytle comment in string"
 
 frequencies of identifiers:
-===== _INPUT - 436 =====
+===== _INPUT - 292 =====
 
-===== OUTPUT - 436 =====
+===== OUTPUT - 292 =====
 1:
 
 frequencies of identifiers:
-===== _INPUT - 437 =====
+===== _INPUT - 293 =====
 // C++ syntax line comment
-===== OUTPUT - 437 =====
+===== OUTPUT - 293 =====
 1:// C++ syntax line comment
 
 frequencies of identifiers:
-===== _INPUT - 438 =====
+===== _INPUT - 294 =====
 /* C syntax block comment */
-===== OUTPUT - 438 =====
+===== OUTPUT - 294 =====
 1:/* C syntax block comment */
 
 frequencies of identifiers:
-===== _INPUT - 439 =====
+===== _INPUT - 295 =====
 /*
-===== OUTPUT - 439 =====
+===== OUTPUT - 295 =====
 1:/*
 
 frequencies of identifiers:
-===== _INPUT - 440 =====
+===== _INPUT - 296 =====
  * block comment wrap
-===== OUTPUT - 440 =====
+===== OUTPUT - 296 =====
 <"*">
 <id:block>
 <id:comment>
@@ -3074,60 +2063,1141 @@ frequencies of identifiers:
 block	1
 comment	1
 wrap	1
-===== _INPUT - 441 =====
+===== _INPUT - 297 =====
  * across
-===== OUTPUT - 441 =====
+===== OUTPUT - 297 =====
 <"*">
 <id:across>
 1: * across
 
 frequencies of identifiers:
 across	1
-===== _INPUT - 442 =====
+===== _INPUT - 298 =====
  * lines.
-===== OUTPUT - 442 =====
+===== OUTPUT - 298 =====
 Error at line 1: .
 <"*">
 <id:lines>
-===== _INPUT - 443 =====
+===== _INPUT - 299 =====
  */
-===== OUTPUT - 443 =====
+===== OUTPUT - 299 =====
 <"*">
 <"/">
 1: */
 
 frequencies of identifiers:
-===== _INPUT - 444 =====
+===== _INPUT - 300 =====
 // "line comment with string"
-===== OUTPUT - 444 =====
+===== OUTPUT - 300 =====
 1:// "line comment with string"
 
 frequencies of identifiers:
-===== _INPUT - 445 =====
+===== _INPUT - 301 =====
 /*
-===== OUTPUT - 445 =====
+===== OUTPUT - 301 =====
 1:/*
 
 frequencies of identifiers:
-===== _INPUT - 446 =====
+===== _INPUT - 302 =====
  * "block comment with string"
-===== OUTPUT - 446 =====
+===== OUTPUT - 302 =====
 <"*">
 <string:block comment with string>
 1: * "block comment with string"
 
 frequencies of identifiers:
-===== _INPUT - 447 =====
+===== _INPUT - 303 =====
  */
-===== OUTPUT - 447 =====
+===== OUTPUT - 303 =====
 <"*">
 <"/">
 1: */
 
 frequencies of identifiers:
+===== _INPUT - 304 =====
+#pragma source on
+===== OUTPUT - 304 =====
+1:#pragma source on
+
+frequencies of identifiers:
+===== _INPUT - 305 =====
+
+===== OUTPUT - 305 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 306 =====
+// 2.2 - pragma token - reuse test cases in Sec.1, without printing token
+===== OUTPUT - 306 =====
+1:// 2.2 - pragma token - reuse test cases in Sec.1, without printing token
+
+frequencies of identifiers:
+===== _INPUT - 307 =====
+#pragma token off
+===== OUTPUT - 307 =====
+1:#pragma token off
+
+frequencies of identifiers:
+===== _INPUT - 308 =====
+,
+===== OUTPUT - 308 =====
+<delim:,>
+1:,
+
+frequencies of identifiers:
+===== _INPUT - 309 =====
+;
+===== OUTPUT - 309 =====
+<delim:;>
+1:;
+
+frequencies of identifiers:
+===== _INPUT - 310 =====
+(
+===== OUTPUT - 310 =====
+<delim:(>
+1:(
+
+frequencies of identifiers:
+===== _INPUT - 311 =====
+)
+===== OUTPUT - 311 =====
+<delim:)>
+1:)
+
+frequencies of identifiers:
+===== _INPUT - 312 =====
+[
+===== OUTPUT - 312 =====
+<delim:[>
+1:[
+
+frequencies of identifiers:
+===== _INPUT - 313 =====
+]
+===== OUTPUT - 313 =====
+<delim:]>
+1:]
+
+frequencies of identifiers:
+===== _INPUT - 314 =====
+{
+===== OUTPUT - 314 =====
+<delim:{>
+1:{
+
+frequencies of identifiers:
+===== _INPUT - 315 =====
+}
+===== OUTPUT - 315 =====
+<delim:}>
+1:}
+
+frequencies of identifiers:
+===== _INPUT - 316 =====
+
+===== OUTPUT - 316 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 317 =====
++
+===== OUTPUT - 317 =====
+<"+">
+1:+
+
+frequencies of identifiers:
+===== _INPUT - 318 =====
+-
+===== OUTPUT - 318 =====
+<"-">
+1:-
+
+frequencies of identifiers:
+===== _INPUT - 319 =====
+*
+===== OUTPUT - 319 =====
+<"*">
+1:*
+
+frequencies of identifiers:
+===== _INPUT - 320 =====
+/
+===== OUTPUT - 320 =====
+<"/">
+1:/
+
+frequencies of identifiers:
+===== _INPUT - 321 =====
+%
+===== OUTPUT - 321 =====
+<"%">
+1:%
+
+frequencies of identifiers:
+===== _INPUT - 322 =====
+<=
+===== OUTPUT - 322 =====
+<"<=">
+1:<=
+
+frequencies of identifiers:
+===== _INPUT - 323 =====
+<
+===== OUTPUT - 323 =====
+<"<">
+1:<
+
+frequencies of identifiers:
+===== _INPUT - 324 =====
+=!
+===== OUTPUT - 324 =====
+<"=">
+<"!">
+1:=!
+
+frequencies of identifiers:
+===== _INPUT - 325 =====
+>=
+===== OUTPUT - 325 =====
+<">=">
+1:>=
+
+frequencies of identifiers:
+===== _INPUT - 326 =====
+>
+===== OUTPUT - 326 =====
+<">">
+1:>
+
+frequencies of identifiers:
+===== _INPUT - 327 =====
+==
+===== OUTPUT - 327 =====
+<"==">
+1:==
+
+frequencies of identifiers:
+===== _INPUT - 328 =====
+&&
+===== OUTPUT - 328 =====
+<"&&">
+1:&&
+
+frequencies of identifiers:
+===== _INPUT - 329 =====
+||
+===== OUTPUT - 329 =====
+<"||">
+1:||
+
+frequencies of identifiers:
+===== _INPUT - 330 =====
+!
+===== OUTPUT - 330 =====
+<"!">
+1:!
+
+frequencies of identifiers:
+===== _INPUT - 331 =====
+
+===== OUTPUT - 331 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 332 =====
+while
+===== OUTPUT - 332 =====
+<KW:while>
+1:while
+
+frequencies of identifiers:
+===== _INPUT - 333 =====
+do
+===== OUTPUT - 333 =====
+<KW:do>
+1:do
+
+frequencies of identifiers:
+===== _INPUT - 334 =====
+if
+===== OUTPUT - 334 =====
+<KW:if>
+1:if
+
+frequencies of identifiers:
+===== _INPUT - 335 =====
+else
+===== OUTPUT - 335 =====
+<KW:else>
+1:else
+
+frequencies of identifiers:
+===== _INPUT - 336 =====
+true
+===== OUTPUT - 336 =====
+<KW:true>
+1:true
+
+frequencies of identifiers:
+===== _INPUT - 337 =====
+false
+===== OUTPUT - 337 =====
+<KW:false>
+1:false
+
+frequencies of identifiers:
+===== _INPUT - 338 =====
+for
+===== OUTPUT - 338 =====
+<KW:for>
+1:for
+
+frequencies of identifiers:
+===== _INPUT - 339 =====
+int
+===== OUTPUT - 339 =====
+<KW:int>
+1:int
+
+frequencies of identifiers:
+===== _INPUT - 340 =====
+print
+===== OUTPUT - 340 =====
+<KW:print>
+1:print
+
+frequencies of identifiers:
+===== _INPUT - 341 =====
+const
+===== OUTPUT - 341 =====
+<KW:const>
+1:const
+
+frequencies of identifiers:
+===== _INPUT - 342 =====
+read
+===== OUTPUT - 342 =====
+<KW:read>
+1:read
+
+frequencies of identifiers:
+===== _INPUT - 343 =====
+boolean
+===== OUTPUT - 343 =====
+<KW:boolean>
+1:boolean
+
+frequencies of identifiers:
+===== _INPUT - 344 =====
+bool
+===== OUTPUT - 344 =====
+<KW:bool>
+1:bool
+
+frequencies of identifiers:
+===== _INPUT - 345 =====
+void
+===== OUTPUT - 345 =====
+<KW:void>
+1:void
+
+frequencies of identifiers:
+===== _INPUT - 346 =====
+float
+===== OUTPUT - 346 =====
+<KW:float>
+1:float
+
+frequencies of identifiers:
+===== _INPUT - 347 =====
+double
+===== OUTPUT - 347 =====
+<KW:double>
+1:double
+
+frequencies of identifiers:
+===== _INPUT - 348 =====
+string
+===== OUTPUT - 348 =====
+<KW:string>
+1:string
+
+frequencies of identifiers:
+===== _INPUT - 349 =====
+continue
+===== OUTPUT - 349 =====
+<KW:continue>
+1:continue
+
+frequencies of identifiers:
+===== _INPUT - 350 =====
+break
+===== OUTPUT - 350 =====
+<KW:break>
+1:break
+
+frequencies of identifiers:
+===== _INPUT - 351 =====
+return
+===== OUTPUT - 351 =====
+<KW:return>
+1:return
+
+frequencies of identifiers:
+===== _INPUT - 352 =====
+
+===== OUTPUT - 352 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 353 =====
+ident
+===== OUTPUT - 353 =====
+<id:ident>
+1:ident
+
+frequencies of identifiers:
+ident	1
+===== _INPUT - 354 =====
+Ident
+===== OUTPUT - 354 =====
+<id:Ident>
+1:Ident
+
+frequencies of identifiers:
+Ident	1
+===== _INPUT - 355 =====
+IDENT
+===== OUTPUT - 355 =====
+<id:IDENT>
+1:IDENT
+
+frequencies of identifiers:
+IDENT	1
+===== _INPUT - 356 =====
+_ident
+===== OUTPUT - 356 =====
+<id:_ident>
+1:_ident
+
+frequencies of identifiers:
+_ident	1
+===== _INPUT - 357 =====
+__indent
+===== OUTPUT - 357 =====
+<id:__indent>
+1:__indent
+
+frequencies of identifiers:
+__indent	1
+===== _INPUT - 358 =====
+__3ident
+===== OUTPUT - 358 =====
+<id:__3ident>
+1:__3ident
+
+frequencies of identifiers:
+__3ident	1
+===== _INPUT - 359 =====
+ident3
+===== OUTPUT - 359 =====
+<id:ident3>
+1:ident3
+
+frequencies of identifiers:
+ident3	1
+===== _INPUT - 360 =====
+
+===== OUTPUT - 360 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 361 =====
+123
+===== OUTPUT - 361 =====
+<integer:123>
+1:123
+
+frequencies of identifiers:
+===== _INPUT - 362 =====
+45
+===== OUTPUT - 362 =====
+<integer:45>
+1:45
+
+frequencies of identifiers:
+===== _INPUT - 363 =====
+6
+===== OUTPUT - 363 =====
+<integer:6>
+1:6
+
+frequencies of identifiers:
+===== _INPUT - 364 =====
+0
+===== OUTPUT - 364 =====
+<integer:0>
+1:0
+
+frequencies of identifiers:
+===== _INPUT - 365 =====
+0123
+===== OUTPUT - 365 =====
+<integer:0>
+<integer:123>
+1:0123
+
+frequencies of identifiers:
+===== _INPUT - 366 =====
+
+===== OUTPUT - 366 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 367 =====
+0.0
+===== OUTPUT - 367 =====
+<float:0.0>
+1:0.0
+
+frequencies of identifiers:
+===== _INPUT - 368 =====
+02.03
+===== OUTPUT - 368 =====
+<float:02.03>
+1:02.03
+
+frequencies of identifiers:
+===== _INPUT - 369 =====
+123.45
+===== OUTPUT - 369 =====
+<float:123.45>
+1:123.45
+
+frequencies of identifiers:
+===== _INPUT - 370 =====
+
+===== OUTPUT - 370 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 371 =====
+1.23E4
+===== OUTPUT - 371 =====
+<scientific:1.23E4>
+1:1.23E4
+
+frequencies of identifiers:
+===== _INPUT - 372 =====
+1.23E+4
+===== OUTPUT - 372 =====
+<scientific:1.23E+4>
+1:1.23E+4
+
+frequencies of identifiers:
+===== _INPUT - 373 =====
+01.23E-4
+===== OUTPUT - 373 =====
+<scientific:01.23E-4>
+1:01.23E-4
+
+frequencies of identifiers:
+===== _INPUT - 374 =====
+123E04
+===== OUTPUT - 374 =====
+<scientific:123E04>
+1:123E04
+
+frequencies of identifiers:
+===== _INPUT - 375 =====
+
+===== OUTPUT - 375 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 376 =====
+","
+===== OUTPUT - 376 =====
+<string:,>
+1:","
+
+frequencies of identifiers:
+===== _INPUT - 377 =====
+";"
+===== OUTPUT - 377 =====
+<string:;>
+1:";"
+
+frequencies of identifiers:
+===== _INPUT - 378 =====
+"("
+===== OUTPUT - 378 =====
+<string:(>
+1:"("
+
+frequencies of identifiers:
+===== _INPUT - 379 =====
+")"
+===== OUTPUT - 379 =====
+<string:)>
+1:")"
+
+frequencies of identifiers:
+===== _INPUT - 380 =====
+"["
+===== OUTPUT - 380 =====
+<string:[>
+1:"["
+
+frequencies of identifiers:
+===== _INPUT - 381 =====
+"]"
+===== OUTPUT - 381 =====
+<string:]>
+1:"]"
+
+frequencies of identifiers:
+===== _INPUT - 382 =====
+"{"
+===== OUTPUT - 382 =====
+<string:{>
+1:"{"
+
+frequencies of identifiers:
+===== _INPUT - 383 =====
+"}"
+===== OUTPUT - 383 =====
+<string:}>
+1:"}"
+
+frequencies of identifiers:
+===== _INPUT - 384 =====
+"+"
+===== OUTPUT - 384 =====
+<string:+>
+1:"+"
+
+frequencies of identifiers:
+===== _INPUT - 385 =====
+"-"
+===== OUTPUT - 385 =====
+<string:->
+1:"-"
+
+frequencies of identifiers:
+===== _INPUT - 386 =====
+"*"
+===== OUTPUT - 386 =====
+<string:*>
+1:"*"
+
+frequencies of identifiers:
+===== _INPUT - 387 =====
+"/"
+===== OUTPUT - 387 =====
+<string:/>
+1:"/"
+
+frequencies of identifiers:
+===== _INPUT - 388 =====
+"%"
+===== OUTPUT - 388 =====
+<string:%>
+1:"%"
+
+frequencies of identifiers:
+===== _INPUT - 389 =====
+"=<"
+===== OUTPUT - 389 =====
+<string:=<>
+1:"=<"
+
+frequencies of identifiers:
+===== _INPUT - 390 =====
+"<"
+===== OUTPUT - 390 =====
+<string:<>
+1:"<"
+
+frequencies of identifiers:
+===== _INPUT - 391 =====
+"=!"
+===== OUTPUT - 391 =====
+<string:=!>
+1:"=!"
+
+frequencies of identifiers:
+===== _INPUT - 392 =====
+"=>"
+===== OUTPUT - 392 =====
+<string:=>>
+1:"=>"
+
+frequencies of identifiers:
+===== _INPUT - 393 =====
+">"
+===== OUTPUT - 393 =====
+<string:>>
+1:">"
+
+frequencies of identifiers:
+===== _INPUT - 394 =====
+"=="
+===== OUTPUT - 394 =====
+<string:==>
+1:"=="
+
+frequencies of identifiers:
+===== _INPUT - 395 =====
+"&&"
+===== OUTPUT - 395 =====
+<string:&&>
+1:"&&"
+
+frequencies of identifiers:
+===== _INPUT - 396 =====
+"||"
+===== OUTPUT - 396 =====
+<string:||>
+1:"||"
+
+frequencies of identifiers:
+===== _INPUT - 397 =====
+"!"
+===== OUTPUT - 397 =====
+<string:!>
+1:"!"
+
+frequencies of identifiers:
+===== _INPUT - 398 =====
+"while"
+===== OUTPUT - 398 =====
+<string:while>
+1:"while"
+
+frequencies of identifiers:
+===== _INPUT - 399 =====
+"do"
+===== OUTPUT - 399 =====
+<string:do>
+1:"do"
+
+frequencies of identifiers:
+===== _INPUT - 400 =====
+"if"
+===== OUTPUT - 400 =====
+<string:if>
+1:"if"
+
+frequencies of identifiers:
+===== _INPUT - 401 =====
+"else"
+===== OUTPUT - 401 =====
+<string:else>
+1:"else"
+
+frequencies of identifiers:
+===== _INPUT - 402 =====
+"true"
+===== OUTPUT - 402 =====
+<string:true>
+1:"true"
+
+frequencies of identifiers:
+===== _INPUT - 403 =====
+"false"
+===== OUTPUT - 403 =====
+<string:false>
+1:"false"
+
+frequencies of identifiers:
+===== _INPUT - 404 =====
+"for"
+===== OUTPUT - 404 =====
+<string:for>
+1:"for"
+
+frequencies of identifiers:
+===== _INPUT - 405 =====
+"int"
+===== OUTPUT - 405 =====
+<string:int>
+1:"int"
+
+frequencies of identifiers:
+===== _INPUT - 406 =====
+"print"
+===== OUTPUT - 406 =====
+<string:print>
+1:"print"
+
+frequencies of identifiers:
+===== _INPUT - 407 =====
+"const"
+===== OUTPUT - 407 =====
+<string:const>
+1:"const"
+
+frequencies of identifiers:
+===== _INPUT - 408 =====
+"read"
+===== OUTPUT - 408 =====
+<string:read>
+1:"read"
+
+frequencies of identifiers:
+===== _INPUT - 409 =====
+"boolean"
+===== OUTPUT - 409 =====
+<string:boolean>
+1:"boolean"
+
+frequencies of identifiers:
+===== _INPUT - 410 =====
+"bool"
+===== OUTPUT - 410 =====
+<string:bool>
+1:"bool"
+
+frequencies of identifiers:
+===== _INPUT - 411 =====
+"void"
+===== OUTPUT - 411 =====
+<string:void>
+1:"void"
+
+frequencies of identifiers:
+===== _INPUT - 412 =====
+"float"
+===== OUTPUT - 412 =====
+<string:float>
+1:"float"
+
+frequencies of identifiers:
+===== _INPUT - 413 =====
+"double"
+===== OUTPUT - 413 =====
+<string:double>
+1:"double"
+
+frequencies of identifiers:
+===== _INPUT - 414 =====
+"string"
+===== OUTPUT - 414 =====
+<string:string>
+1:"string"
+
+frequencies of identifiers:
+===== _INPUT - 415 =====
+"continue"
+===== OUTPUT - 415 =====
+<string:continue>
+1:"continue"
+
+frequencies of identifiers:
+===== _INPUT - 416 =====
+"break"
+===== OUTPUT - 416 =====
+<string:break>
+1:"break"
+
+frequencies of identifiers:
+===== _INPUT - 417 =====
+"return"
+===== OUTPUT - 417 =====
+<string:return>
+1:"return"
+
+frequencies of identifiers:
+===== _INPUT - 418 =====
+"ident"
+===== OUTPUT - 418 =====
+<string:ident>
+1:"ident"
+
+frequencies of identifiers:
+===== _INPUT - 419 =====
+"Ident"
+===== OUTPUT - 419 =====
+<string:Ident>
+1:"Ident"
+
+frequencies of identifiers:
+===== _INPUT - 420 =====
+"IDENT"
+===== OUTPUT - 420 =====
+<string:IDENT>
+1:"IDENT"
+
+frequencies of identifiers:
+===== _INPUT - 421 =====
+"_ident"
+===== OUTPUT - 421 =====
+<string:_ident>
+1:"_ident"
+
+frequencies of identifiers:
+===== _INPUT - 422 =====
+"__indent"
+===== OUTPUT - 422 =====
+<string:__indent>
+1:"__indent"
+
+frequencies of identifiers:
+===== _INPUT - 423 =====
+"__3ident"
+===== OUTPUT - 423 =====
+<string:__3ident>
+1:"__3ident"
+
+frequencies of identifiers:
+===== _INPUT - 424 =====
+"3ident"
+===== OUTPUT - 424 =====
+<string:3ident>
+1:"3ident"
+
+frequencies of identifiers:
+===== _INPUT - 425 =====
+"ident3"
+===== OUTPUT - 425 =====
+<string:ident3>
+1:"ident3"
+
+frequencies of identifiers:
+===== _INPUT - 426 =====
+"ident-3"
+===== OUTPUT - 426 =====
+<string:ident-3>
+1:"ident-3"
+
+frequencies of identifiers:
+===== _INPUT - 427 =====
+"-indent3"
+===== OUTPUT - 427 =====
+<string:-indent3>
+1:"-indent3"
+
+frequencies of identifiers:
+===== _INPUT - 428 =====
+"hello world"
+===== OUTPUT - 428 =====
+<string:hello world>
+1:"hello world"
+
+frequencies of identifiers:
+===== _INPUT - 429 =====
+"\"hello world\""
+===== OUTPUT - 429 =====
+<string:"hello world">
+1:"\"hello world\""
+
+frequencies of identifiers:
+===== _INPUT - 430 =====
+"hello world\\"
+===== OUTPUT - 430 =====
+<string:hello world\\>
+1:"hello world\\\\"
+
+frequencies of identifiers:
+===== _INPUT - 431 =====
+"#pragma source on"
+===== OUTPUT - 431 =====
+<string:#pragma source on>
+1:"#pragma source on"
+
+frequencies of identifiers:
+===== _INPUT - 432 =====
+"#pragma source off"
+===== OUTPUT - 432 =====
+<string:#pragma source off>
+1:"#pragma source off"
+
+frequencies of identifiers:
+===== _INPUT - 433 =====
+"#pragma token on"
+===== OUTPUT - 433 =====
+<string:#pragma token on>
+1:"#pragma token on"
+
+frequencies of identifiers:
+===== _INPUT - 434 =====
+"#pragma token off"
+===== OUTPUT - 434 =====
+<string:#pragma token off>
+1:"#pragma token off"
+
+frequencies of identifiers:
+===== _INPUT - 435 =====
+"#pragma statistic on"
+===== OUTPUT - 435 =====
+<string:#pragma statistic on>
+1:"#pragma statistic on"
+
+frequencies of identifiers:
+===== _INPUT - 436 =====
+"#pragma statistic off"
+===== OUTPUT - 436 =====
+<string:#pragma statistic off>
+1:"#pragma statistic off"
+
+frequencies of identifiers:
+===== _INPUT - 437 =====
+"//cpp-style comment in string"
+===== OUTPUT - 437 =====
+<string://cpp-style comment in string>
+1:"//cpp-style comment in string"
+
+frequencies of identifiers:
+===== _INPUT - 438 =====
+"//c-sytle comment in string"
+===== OUTPUT - 438 =====
+<string://c-sytle comment in string>
+1:"//c-sytle comment in string"
+
+frequencies of identifiers:
+===== _INPUT - 439 =====
+
+===== OUTPUT - 439 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 440 =====
+// C++ syntax line comment
+===== OUTPUT - 440 =====
+1:// C++ syntax line comment
+
+frequencies of identifiers:
+===== _INPUT - 441 =====
+/* C syntax block comment */
+===== OUTPUT - 441 =====
+1:/* C syntax block comment */
+
+frequencies of identifiers:
+===== _INPUT - 442 =====
+/*
+===== OUTPUT - 442 =====
+1:/*
+
+frequencies of identifiers:
+===== _INPUT - 443 =====
+ * block comment wrap
+===== OUTPUT - 443 =====
+<"*">
+<id:block>
+<id:comment>
+<id:wrap>
+1: * block comment wrap
+
+frequencies of identifiers:
+block	1
+comment	1
+wrap	1
+===== _INPUT - 444 =====
+ * across
+===== OUTPUT - 444 =====
+<"*">
+<id:across>
+1: * across
+
+frequencies of identifiers:
+across	1
+===== _INPUT - 445 =====
+ * lines.
+===== OUTPUT - 445 =====
+Error at line 1: .
+<"*">
+<id:lines>
+===== _INPUT - 446 =====
+ */
+===== OUTPUT - 446 =====
+<"*">
+<"/">
+1: */
+
+frequencies of identifiers:
+===== _INPUT - 447 =====
+// "line comment with string"
+===== OUTPUT - 447 =====
+1:// "line comment with string"
+
+frequencies of identifiers:
 ===== _INPUT - 448 =====
-#pragma token on
+/*
 ===== OUTPUT - 448 =====
+1:/*
+
+frequencies of identifiers:
+===== _INPUT - 449 =====
+ * "block comment with string"
+===== OUTPUT - 449 =====
+<"*">
+<string:block comment with string>
+1: * "block comment with string"
+
+frequencies of identifiers:
+===== _INPUT - 450 =====
+ */
+===== OUTPUT - 450 =====
+<"*">
+<"/">
+1: */
+
+frequencies of identifiers:
+===== _INPUT - 451 =====
+#pragma token on
+===== OUTPUT - 451 =====
 1:#pragma token on
+
+frequencies of identifiers:
+===== _INPUT - 452 =====
+
+===== OUTPUT - 452 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 453 =====
+// 2.3 - comment can comes after pragma
+===== OUTPUT - 453 =====
+1:// 2.3 - comment can comes after pragma
+
+frequencies of identifiers:
+===== _INPUT - 454 =====
+#pragma source on  // follow by line comment
+===== OUTPUT - 454 =====
+1:#pragma source on  // follow by line comment
+
+frequencies of identifiers:
+===== _INPUT - 455 =====
+#pragma source on  /* follow by block comment */
+===== OUTPUT - 455 =====
+1:#pragma source on  /* follow by block comment */
+
+frequencies of identifiers:
+===== _INPUT - 456 =====
+#pragma source on  /* follow by block comment
+===== OUTPUT - 456 =====
+1:#pragma source on  /* follow by block comment
+
+frequencies of identifiers:
+===== _INPUT - 457 =====
+wrap across line */
+===== OUTPUT - 457 =====
+<id:wrap>
+<id:across>
+<id:line>
+<"*">
+<"/">
+1:wrap across line */
+
+frequencies of identifiers:
+wrap	1
+across	1
+line	1
+===== _INPUT - 458 =====
+
+===== OUTPUT - 458 =====
+1:
 
 frequencies of identifiers:
