@@ -32,9 +32,9 @@ fi
 if [ ! -f 'scanner' ]; then
     echo -e " ~> scanner not found, trying to make it from upper directory..."
     WORKSPACE=$(pwd)
-    cd ..
+    cd ../../
     UPPER_DIR=$(pwd)
-    make && ln -s ${UPPER_DIR}/scanner ${WORKSPACE}/ && cd ${WORKSPACE}
+    make scanner && ln -s ${UPPER_DIR}/scanner ${WORKSPACE}/ && cd ${WORKSPACE}
 fi
 
 # Check if input file exist

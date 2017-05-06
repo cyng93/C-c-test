@@ -4,6 +4,9 @@ C-c-test is use to test C-minus compiler writen throughout ypyou's Compiler Desi
 # Usage
 - Place C-c-test in your C-minus compiler project directory, and that's all!
 
-- We are assuming that the there's a Makefile that could generate `scanner` which we will then use to run the test.
+- There is a directory corresponding to every sub-system of Compiler, which tests sits in each directory.
+  i.e., directory `scanner_test` consists of testes that helps to test scanner.
 
-- run `run_test.sh` for usage.
+- For each subsystem, we assumed that there should be corresponding rule in Makefile so `run_test.sh` can generate corresponding executable binary to run the test.
+
+- Run `run_test.sh` in each directory for usage.
