@@ -1,0 +1,196 @@
+===== _INPUT - 1 =====
+#pragma edf on      // error should be at character 'e'
+===== OUTPUT - 1 =====
+Error at line 1: e
+===== _INPUT - 2 =====
+.123                // error should be at character '.'
+===== OUTPUT - 2 =====
+Error at line 1: .
+===== _INPUT - 3 =====
+123e+abc            // shouldn't return scientific token <123e+>
+===== OUTPUT - 3 =====
+<integer:123>
+<id:e>
+<"+">
+<id:abc>
+1:123e+abc            // shouldn't return scientific token <123e+>
+
+frequencies of identifiers:
+e	1
+abc	1
+===== _INPUT - 4 =====
+
+===== OUTPUT - 4 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 5 =====
+/*
+===== OUTPUT - 5 =====
+1:/*
+
+frequencies of identifiers:
+===== _INPUT - 6 =====
+ * #pragma .. within block comment across line should be treated as a comment
+===== OUTPUT - 6 =====
+Error at line 1: #
+<"*">
+===== _INPUT - 7 =====
+ *
+===== OUTPUT - 7 =====
+<"*">
+1: *
+
+frequencies of identifiers:
+===== _INPUT - 8 =====
+ *  to test this, a manual test is needed since our scanner test break testcase
+===== OUTPUT - 8 =====
+<"*">
+<id:to>
+<id:test>
+<id:this>
+<delim:,>
+<id:a>
+<id:manual>
+<id:test>
+<id:is>
+<id:needed>
+<id:since>
+<id:our>
+<id:scanner>
+<id:test>
+<KW:break>
+<id:testcase>
+1: *  to test this, a manual test is needed since our scanner test break testcase
+
+frequencies of identifiers:
+to	1
+test	3
+this	1
+a	1
+manual	1
+is	1
+needed	1
+since	1
+our	1
+scanner	1
+testcase	1
+===== _INPUT - 9 =====
+ *  into mutiple small testcase line by line and this particular test required
+===== OUTPUT - 9 =====
+<"*">
+<id:into>
+<id:mutiple>
+<id:small>
+<id:testcase>
+<id:line>
+<id:by>
+<id:line>
+<id:and>
+<id:this>
+<id:particular>
+<id:test>
+<id:required>
+1: *  into mutiple small testcase line by line and this particular test required
+
+frequencies of identifiers:
+into	1
+mutiple	1
+small	1
+testcase	1
+line	2
+by	1
+and	1
+this	1
+particular	1
+test	1
+required	1
+===== _INPUT - 10 =====
+ *  mutliple line to test it.
+===== OUTPUT - 10 =====
+Error at line 1: .
+<"*">
+<id:mutliple>
+<id:line>
+<id:to>
+<id:test>
+<id:it>
+===== _INPUT - 11 =====
+ *
+===== OUTPUT - 11 =====
+<"*">
+1: *
+
+frequencies of identifiers:
+===== _INPUT - 12 =====
+ *  Hoever a simple test like below can be run via iteractive console.
+===== OUTPUT - 12 =====
+Error at line 1: .
+<"*">
+<id:Hoever>
+<id:a>
+<id:simple>
+<id:test>
+<id:like>
+<id:below>
+<id:can>
+<id:be>
+<id:run>
+<id:via>
+<id:iteractive>
+<id:console>
+===== _INPUT - 13 =====
+ */
+===== OUTPUT - 13 =====
+<"*">
+<"/">
+1: */
+
+frequencies of identifiers:
+===== _INPUT - 14 =====
+
+===== OUTPUT - 14 =====
+1:
+
+frequencies of identifiers:
+===== _INPUT - 15 =====
+you_shouldve_see_this           // should print source (scanner default option)
+===== OUTPUT - 15 =====
+<id:you_shouldve_see_this>
+1:you_shouldve_see_this           // should print source (scanner default option)
+
+frequencies of identifiers:
+you_shouldve_see_this	1
+===== _INPUT - 16 =====
+/*
+===== OUTPUT - 16 =====
+1:/*
+
+frequencies of identifiers:
+===== _INPUT - 17 =====
+ * #pragma source off
+===== OUTPUT - 17 =====
+Error at line 1: #
+<"*">
+===== _INPUT - 18 =====
+ */
+===== OUTPUT - 18 =====
+<"*">
+<"/">
+1: */
+
+frequencies of identifiers:
+===== _INPUT - 19 =====
+you_shouldnt_have_see_this      // should print source (scanner default option)
+===== OUTPUT - 19 =====
+<id:you_shouldnt_have_see_this>
+1:you_shouldnt_have_see_this      // should print source (scanner default option)
+
+frequencies of identifiers:
+you_shouldnt_have_see_this	1
+===== _INPUT - 20 =====
+
+===== OUTPUT - 20 =====
+1:
+
+frequencies of identifiers:
