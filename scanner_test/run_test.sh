@@ -19,7 +19,9 @@ USAGE="\
  ~> invalid syntax !\n\n\
  Usage: ./run_test.sh <PARTICULAR_TEST>\n\
  Available test: \n\
-${TEST_AVAILABLE}\
+${TEST_AVAILABLE}\n\n\
+ To run all test, simply: \n\
+   $ ls | grep .c$ | awk '{system(\"./run_test.sh \"\$1)}'\
  "
 
 

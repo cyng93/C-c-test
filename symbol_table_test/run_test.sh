@@ -21,7 +21,7 @@ USAGE="\
  Available test: \n\
 ${TEST_AVAILABLE} \n\n\
  To run all test, simply: \n\
-   $ ls | grep .cm$ | awk '{system(\"./run_test.sh \"$1)}'\
+   $ ls | grep .cm$ | awk '{system(\"./run_test.sh \"\$1)}'\
  "
 
 
