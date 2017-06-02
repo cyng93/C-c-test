@@ -1,4 +1,4 @@
-// testcases/program_unit_neg4.c
+// semantic_test/program_unit_neg4.c
 
 /*
  * 1 - PROGRAM UNIT (NEGATIVE TEST)

@@ -1,4 +1,4 @@
-// testcases/program_unit_pos.c
+// semantic_test/program_unit_pos.c
 
 /*
  * 1 - PROGRAM UNIT (POSITIVE TEST)
@@ -12,6 +12,7 @@
 // 1.5 - func can return type it had decl/def in previous line
 // 1.6 - func whose return type is void can exclude returning
 // 1.7 - func can early return
+
 void f1();
 
 float f2(bool x)

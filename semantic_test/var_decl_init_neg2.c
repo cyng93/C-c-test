@@ -9,6 +9,6 @@
 void f1()
 {
     int a[1];
-    int b[0];
-    int c[-1];
+    int b[0];         // error due to invalid array references index
+    int c[1][-1];     // error due to invalid array references index
 }

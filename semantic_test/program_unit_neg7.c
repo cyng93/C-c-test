@@ -1,4 +1,4 @@
-// testcases/program_unit_neg7.c
+// semantic_test/program_unit_neg7.c
 
 /*
  * 1 - PROGRAM UNIT (NEGATIVE TEST)
@@ -10,7 +10,8 @@ float f2();
 
 int f1()
 {
-    a = 0;
+  int a;
+  a = 0;
 }                   // error due to no return stmt was found
 
 float f2()

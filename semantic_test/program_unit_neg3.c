@@ -1,4 +1,4 @@
-// testcases/program_unit_neg3.c
+// semantic_test/program_unit_neg3.c
 
 /*
  * 1 - PROGRAM UNIT (NEGATIVE TEST)
@@ -22,9 +22,9 @@ int f5()
 
 void f1();          // error due to func redeclaration
 
-int f2(bool x)      // error due to func redefinition
+int f2(bool x)
 {
     return 0;
-}
+}                   // error due to func redefinition
 
 int f5();           // error due to func_decl after definition

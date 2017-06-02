@@ -26,7 +26,7 @@ void main()
     int a1[5];                  // array with index > 0 can be decl successfully
 
     float f = 1.0;
-    a1[2] = f;                  // var assignment can be perform if LHS & RHS
+    f = 1+2.0;                  // var assignment can be perform if LHS & RHS
                                 //  type is same after coercion(cover later)
 
     int ar[2][3] = {1, 2, 3, 4, 5, 6};  // array decl where RHS has same amount

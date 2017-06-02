@@ -10,7 +10,8 @@
 void f1()
 {
     const int a = 1;
-    const float a = 2.0;    // error due to var re-declaration
+    //const float a = 2.0;    // error due to var re-declaration
+    const float a = 1.0, x = 2.0;
     int b = 0;
 
     a = 2;                  // error due to val assignment to const var
