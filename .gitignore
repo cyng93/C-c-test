@@ -1,0 +1,10 @@
+C-c-test
+*.sw*
+cscope.*
+tags
+
+lex.yy.c
+y.tab.c
+y.tab.h
+parser
+scanner

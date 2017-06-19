@@ -1,0 +1,3 @@
+// empty.c
+void main() {
+}
